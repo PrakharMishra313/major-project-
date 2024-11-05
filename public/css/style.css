@@ -1,0 +1,65 @@
+body {
+    background-color: pink;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    height: 8rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Adjusted for better vertical alignment */
+}
+
+.card-img-top {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Crop to fill the dimensions */
+    background-color: #dcdcdc; /* Placeholder color */
+    border-radius: 5px; /* Rounded corners for better appearance */
+}
+
+/* Add a hover effect for the card */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+} 
+
+.card{
+    margin: 20px;
+}
+.btn-dark{
+    background-color: #fe424d !important;
+}
+
+.show-img{
+    height: 30vh;
+}
