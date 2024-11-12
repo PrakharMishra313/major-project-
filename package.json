@@ -7,10 +7,11 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
+    "ejs-mate": "^2.x.x",
     "express": "^4.x.x",
-    "mongoose": "^6.x.x",
+    "joi": "^17.13.3",
     "method-override": "^3.x.x",
-    "ejs-mate": "^2.x.x"
+    "mongoose": "^6.x.x"
   },
   "devDependencies": {
     "nodemon": "^2.x.x"

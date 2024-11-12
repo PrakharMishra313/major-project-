@@ -5,6 +5,10 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
+const wrapAsync = require("../major_project/utils/wrapAsync.js");
+const expressError = require("../major_project/utils/expressError.js");
+const {listingSchema} = require("./schema.js");
+mongoose.set('strictQuery', true); // or false, depending on your needs
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
@@ -31,15 +35,22 @@ app.get("/", (req, res) => {
   res.send("Hi, I am root");
 });
 
-//Index Route
-app.get("/listings", async (req, res, next) => {
-  try {
-    const allListings = await Listing.find({});
-    res.render("listings/index.ejs", { allListings });
-  } catch (err) {
-    next(err);  // Passes the error to Express's default error handler
+const validateListings = (req, res, next) => {
+  const { error } = listingSchema.validate(req.body); // Assumes listingSchema is a Joi schema or similar
+  console.log(error);
+  if (error) {
+    let errMsg = err.detials.map((el)=> el.message).join(",")
+    throw new expressError(404,errMsg);
+  } else {
+    next();
   }
-});
+};
+
+//Index Route
+app.get("/listings", wrapAsync(async (req, res, next) => {
+  const allListings = await Listing.find({});
+  res.render("listings/index.ejs", { allListings });
+}));
 
 //New Route
 app.get("/listings/new", (req, res) => {
@@ -47,40 +58,33 @@ app.get("/listings/new", (req, res) => {
 });
 
 //Show Route
-app.get("/listings/:id", async (req, res) => {
+app.get("/listings/:id", wrapAsync(async (req, res) => {
   let { id } = req.params;
-  try {
-    const listing = await Listing.findById(id);
-    if (!listing) {
-      return res.status(404).send("Listing not found");
-    }
-    res.render("listings/show.ejs", { listing });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Internal Server Error");
-  }
-});
+  const listing = await Listing.findById(id);
+  res.render("listings/show.ejs", { listing });
+}));
 
 //Create Route
-app.post("/listings", async (req, res) => {
+app.post("/listings", validateListings, async (req, res) => {
   const newListing = new Listing(req.body.listing);
   await newListing.save();
   res.redirect("/listings");
 });
 
+
 //Edit Route
-app.get("/listings/:id/edit", async (req, res) => {
+app.get("/listings/:id/edit", wrapAsync(async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id);
   res.render("listings/edit.ejs", { listing });
-});
+}));
 
 //Update Route
-app.put("/listings/:id", async (req, res) => {
+app.put("/listings/:id", wrapAsync(async (req, res) => {
   let { id } = req.params;
   await Listing.findByIdAndUpdate(id, { ...req.body.listing });
   res.redirect(`/listings/${id}`);
-});
+}));
 
 //Delete Route
 app.delete("/listings/:id", async (req, res) => {
@@ -93,7 +97,7 @@ app.delete("/listings/:id", async (req, res) => {
 // Route to seed the data
 app.get("/seed", async (req, res) => {
   try {
-    await Listing.deleteMany({}); // Clear existing listings
+    // await Listing.deleteMany({}); // Clear existing listings
     await Listing.insertMany(listings); // Insert new listings from data.js
     res.send("Data seeded successfully!");
   } catch (err) {
@@ -101,6 +105,15 @@ app.get("/seed", async (req, res) => {
     res.status(500).send("Failed to seed data");
   }
 });
+
+app.all("*",(req,res,next)=>{
+  next(new expressError(404,"page not found"))
+})
+
+app.use((err,req,res,next)=>{
+  let{statusCode=505,message="something went wrong"} = err;
+  res.status(statusCode).render("err.ejs",{message});
+})
 
 app.listen(3000, () => {
   console.log("server is listening to port 3000");
