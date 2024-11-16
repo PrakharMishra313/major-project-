@@ -22,7 +22,7 @@ main()
 
 async function main() {
   await mongoose.connect(MONGO_URL);
-}
+};
 
 app.set("view engine","ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -36,11 +36,10 @@ app.get("/", (req, res) => {
 });
 
 const validateListings = (req, res, next) => {
-  const { error } = listingSchema.validate(req.body); // Assumes listingSchema is a Joi schema or similar
-  console.log(error);
+  const { error } = listingSchema.validate(req.body);
   if (error) {
-    let errMsg = err.detials.map((el)=> el.message).join(",")
-    throw new expressError(404,errMsg);
+    let errMsg = error.details.map((el) => el.message).join(", ");
+    throw new expressError(404, errMsg);
   } else {
     next();
   }
@@ -97,8 +96,8 @@ app.delete("/listings/:id", async (req, res) => {
 // Route to seed the data
 app.get("/seed", async (req, res) => {
   try {
-    // await Listing.deleteMany({}); // Clear existing listings
-    await Listing.insertMany(listings); // Insert new listings from data.js
+    // Clear all listings and seed new data (if needed)
+    await Listing.deleteMany({});
     res.send("Data seeded successfully!");
   } catch (err) {
     console.error("Error seeding data:", err);
@@ -110,10 +109,12 @@ app.all("*",(req,res,next)=>{
   next(new expressError(404,"page not found"))
 })
 
-app.use((err,req,res,next)=>{
-  let{statusCode=505,message="something went wrong"} = err;
-  res.status(statusCode).render("err.ejs",{message});
-})
+app.use((err, req, res, next) => {
+  const errMsg = err.message || "Something went wrong"; // Default error message
+  const status = err.status || 500; // Default status code
+
+  res.status(status).render("err.ejs", { errMsg });
+});
 
 app.listen(3000, () => {
   console.log("server is listening to port 3000");
