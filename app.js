@@ -121,11 +121,6 @@ app.use((err,req,res,next)=>{
 
 console.log('Resolved Path:', path.join(__dirname, 'views/includes/navbar.ejs'));
 
-const fs = require('fs');
-const navbarPath = path.join(__dirname, 'views/includes/navbar.ejs');
-console.log("Navbar file exists:", fs.existsSync(navbarPath));  // Should log 'true'
-
-
 app.listen(3000, () => {
   console.log("server is listening to port 3000");
 });
