@@ -119,7 +119,11 @@ app.use((err,req,res,next)=>{
   res.status(statusCode).render("err.ejs",{message});
 });
 
-console.log(path.join(__dirname, 'views', 'includes', 'navbar.ejs'));
+console.log('Resolved Path:', path.join(__dirname, 'views/includes/navbar.ejs'));
+
+const fs = require('fs');
+const navbarPath = path.join(__dirname, 'views/includes/navbar.ejs');
+console.log("Navbar file exists:", fs.existsSync(navbarPath));  // Should log 'true'
 
 
 app.listen(3000, () => {
