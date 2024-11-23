@@ -7,7 +7,8 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "ejs-mate": "^2.x.x",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^2.3.0",
     "express": "^4.x.x",
     "joi": "^17.13.3",
     "method-override": "^3.x.x",
