@@ -107,13 +107,23 @@ app.get("/seed", async (req, res) => {
 });
 
 app.all("*",(req,res,next)=>{
-  next(new expressError(404,"page not found"))
-})
+  next(new expressError(404,"page not found"));
+});
+
+app.get("/debug", (req, res) => {
+  res.render("layouts/boilerplate", {});
+});
 
 app.use((err,req,res,next)=>{
   let{statusCode=505,message="something went wrong"} = err;
   res.status(statusCode).render("err.ejs",{message});
-})
+});
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 
 app.listen(3000, () => {
   console.log("server is listening to port 3000");
