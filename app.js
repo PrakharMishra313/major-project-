@@ -119,10 +119,7 @@ app.use((err,req,res,next)=>{
   res.status(statusCode).render("err.ejs",{message});
 });
 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
+console.log(path.join(__dirname, 'views', 'includes', 'navbar.ejs'));
 
 
 app.listen(3000, () => {

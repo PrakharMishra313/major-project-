@@ -9,10 +9,11 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "ejs-mate": "^2.3.0",
-    "express": "^4.x.x",
+    "express": "^4.21.1",
     "joi": "^17.13.3",
     "method-override": "^3.x.x",
-    "mongoose": "^6.x.x"
+    "mongoose": "^6.x.x",
+    "package-name": "^0.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.x.x"
