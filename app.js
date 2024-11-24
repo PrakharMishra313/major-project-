@@ -8,7 +8,7 @@ const ejsMate = require("ejs-mate");
 const wrapAsync = require("../major_project/utils/wrapAsync.js");
 const expressError = require("../major_project/utils/expressError.js");
 const {listingSchema} = require("./schema.js");
-path.join(__dirname, 'views', 'includes', 'navbar.ejs')
+path.join(__dirname, 'views', 'includes', 'navbar.ejs');
 mongoose.set('strictQuery', true); // or false, depending on your needs
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
@@ -71,7 +71,6 @@ app.post("/listings", validateListings, async (req, res) => {
   await newListing.save();
   res.redirect("/listings");
 });
-
 
 //Edit Route
 app.get("/listings/:id/edit", wrapAsync(async (req, res) => {

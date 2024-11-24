@@ -1,0 +1,1104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'nodemon' ]
+2 info using npm@1.2.12
+3 info using node@v0.9.12
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Program Files\nodejs\package.json
+6 verbose read json C:\Program Files\nodejs\package.json
+7 verbose cache add [ 'nodemon', null ]
+8 verbose cache add name=undefined spec="nodemon" args=["nodemon",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'nodemon',
+9 verbose parsed url   path: 'nodemon',
+9 verbose parsed url   href: 'nodemon' }
+10 silly lockFile 1625b929-nodemon nodemon
+11 verbose lock nodemon C:\Users\mishr\AppData\Roaming\npm-cache\1625b929-nodemon.lock
+12 silly lockFile 1625b929-nodemon nodemon
+13 silly lockFile 1625b929-nodemon nodemon
+14 verbose addNamed [ 'nodemon', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 4f5e51c6-nodemon nodemon@
+17 verbose lock nodemon@ C:\Users\mishr\AppData\Roaming\npm-cache\4f5e51c6-nodemon.lock
+18 silly addNameRange { name: 'nodemon', range: '', hasData: false }
+19 verbose url raw nodemon
+20 verbose url resolving [ 'https://registry.npmjs.org/', './nodemon' ]
+21 verbose url resolved https://registry.npmjs.org/nodemon
+22 info trying registry request attempt 1 at 22:54:33
+23 http GET https://registry.npmjs.org/nodemon
+24 http 200 https://registry.npmjs.org/nodemon
+25 silly registry.get cb [ 200,
+25 silly registry.get   { date: 'Sun, 24 Nov 2024 17:24:34 GMT',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'content-length': '647001',
+25 silly registry.get     connection: 'keep-alive',
+25 silly registry.get     'cf-ray': '8e7b17e3ed0aa3af-AMD',
+25 silly registry.get     'cf-cache-status': 'HIT',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     'access-control-allow-origin': '*',
+25 silly registry.get     age: '262',
+25 silly registry.get     'cache-control': 'public, max-age=300',
+25 silly registry.get     etag: '"8d7b9d2e15f0f41c16fc612ffa6cb068"',
+25 silly registry.get     'last-modified': 'Sat, 05 Oct 2024 20:50:43 GMT',
+25 silly registry.get     vary: 'accept-encoding, accept',
+25 silly registry.get     server: 'cloudflare' } ]
+26 silly addNameRange number 2 { name: 'nodemon', range: '', hasData: true }
+27 silly addNameRange versions [ 'nodemon',
+27 silly addNameRange   [ '0.1.6',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.1.8',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.7',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.3.1',
+27 silly addNameRange     '0.3.2',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.4.1',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.5.1',
+27 silly addNameRange     '0.5.2',
+27 silly addNameRange     '0.5.3',
+27 silly addNameRange     '0.5.4',
+27 silly addNameRange     '0.5.5',
+27 silly addNameRange     '0.5.6',
+27 silly addNameRange     '0.5.7',
+27 silly addNameRange     '0.6.0',
+27 silly addNameRange     '0.6.1',
+27 silly addNameRange     '0.6.2',
+27 silly addNameRange     '0.6.3',
+27 silly addNameRange     '0.6.4',
+27 silly addNameRange     '0.6.5',
+27 silly addNameRange     '0.6.6',
+27 silly addNameRange     '0.6.7',
+27 silly addNameRange     '0.6.8',
+27 silly addNameRange     '0.6.9',
+27 silly addNameRange     '0.6.10',
+27 silly addNameRange     '0.6.11',
+27 silly addNameRange     '0.6.12',
+27 silly addNameRange     '0.6.13',
+27 silly addNameRange     '0.6.14',
+27 silly addNameRange     '0.6.15',
+27 silly addNameRange     '0.6.16',
+27 silly addNameRange     '0.6.17',
+27 silly addNameRange     '0.6.18',
+27 silly addNameRange     '0.6.19',
+27 silly addNameRange     '0.6.20',
+27 silly addNameRange     '0.6.21',
+27 silly addNameRange     '0.6.22',
+27 silly addNameRange     '0.6.23',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.7.3',
+27 silly addNameRange     '0.7.4',
+27 silly addNameRange     '0.7.5',
+27 silly addNameRange     '0.7.6',
+27 silly addNameRange     '0.7.7',
+27 silly addNameRange     '0.7.8',
+27 silly addNameRange     '0.7.10',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.9.3',
+27 silly addNameRange     '0.9.5',
+27 silly addNameRange     '0.9.6',
+27 silly addNameRange     '0.9.7',
+27 silly addNameRange     '0.9.10',
+27 silly addNameRange     '0.9.11',
+27 silly addNameRange     '0.9.12',
+27 silly addNameRange     '0.9.14',
+27 silly addNameRange     '0.9.16',
+27 silly addNameRange     '0.9.17',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.0.2',
+27 silly addNameRange     '1.0.2-rc',
+27 silly addNameRange     '0.6.10-a',
+27 silly addNameRange     '1.0.2-rc3',
+27 silly addNameRange     '1.0.2-rc4',
+27 silly addNameRange     '1.0.3',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.0.5',
+27 silly addNameRange     '1.0.6',
+27 silly addNameRange     '1.0.7',
+27 silly addNameRange     '1.0.8',
+27 silly addNameRange     '1.0.9',
+27 silly addNameRange     '1.0.10',
+27 silly addNameRange     '1.0.11',
+27 silly addNameRange     '1.0.12',
+27 silly addNameRange     '1.0.13',
+27 silly addNameRange     '1.0.14',
+27 silly addNameRange     '1.0.15',
+27 silly addNameRange     '1.0.16',
+27 silly addNameRange     '1.0.17-rc1',
+27 silly addNameRange     '1.0.17-rc2',
+27 silly addNameRange     '1.0.17',
+27 silly addNameRange     '1.0.18',
+27 silly addNameRange     '1.0.19',
+27 silly addNameRange     '1.0.20',
+27 silly addNameRange     '1.1.0-alpha',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.2.1',
+27 silly addNameRange     '1.3.0-0',
+27 silly addNameRange     '1.3.0-1',
+27 silly addNameRange     '1.3.0-2',
+27 silly addNameRange     '1.3.0-3',
+27 silly addNameRange     '1.3.0-4',
+27 silly addNameRange     '1.3.0-5',
+27 silly addNameRange     '1.3.0-6',
+27 silly addNameRange     '1.3.0-7',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.3.1',
+27 silly addNameRange     '1.3.2',
+27 silly addNameRange     '1.3.3',
+27 silly addNameRange     '1.3.5',
+27 silly addNameRange     '1.3.6',
+27 silly addNameRange     '1.3.7',
+27 silly addNameRange     '1.3.8',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.4.1',
+27 silly addNameRange     '1.5.0-alpha1',
+27 silly addNameRange     '1.5.0-alpha2',
+27 silly addNameRange     '1.5.0-alpha3',
+27 silly addNameRange     '1.5.0-alpha4',
+27 silly addNameRange     '1.4.2',
+27 silly addNameRange     '1.5.0',
+27 silly addNameRange     '1.5.1',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.7.1',
+27 silly addNameRange     '1.7.2',
+27 silly addNameRange     '1.7.3',
+27 silly addNameRange     '1.8.0',
+27 silly addNameRange     '1.8.1',
+27 silly addNameRange     '1.9.0',
+27 silly addNameRange     '1.9.1',
+27 silly addNameRange     '1.9.2',
+27 silly addNameRange     '1.10.0',
+27 silly addNameRange     '1.10.1',
+27 silly addNameRange     '1.10.2',
+27 silly addNameRange     '1.11.0',
+27 silly addNameRange     '1.11.1',
+27 silly addNameRange     '1.12.0',
+27 silly addNameRange     '1.12.1',
+27 silly addNameRange     '1.12.2',
+27 silly addNameRange     '1.12.3',
+27 silly addNameRange     '1.12.4',
+27 silly addNameRange     '1.12.5',
+27 silly addNameRange     '1.12.6',
+27 silly addNameRange     '1.12.7',
+27 silly addNameRange     '1.13.0',
+27 silly addNameRange     '1.13.1',
+27 silly addNameRange     '1.13.2',
+27 silly addNameRange     '1.13.3',
+27 silly addNameRange     '1.14.0',
+27 silly addNameRange     '1.14.1',
+27 silly addNameRange     '1.14.2',
+27 silly addNameRange     '1.14.3',
+27 silly addNameRange     '1.14.4',
+27 silly addNameRange     '1.14.5',
+27 silly addNameRange     '1.14.6',
+27 silly addNameRange     '1.14.7',
+27 silly addNameRange     '1.14.8-alpha.1',
+27 silly addNameRange     '1.14.8',
+27 silly addNameRange     '1.14.9-alpha.1',
+27 silly addNameRange     '1.14.9',
+27 silly addNameRange     '1.4.10-alpha.1',
+27 silly addNameRange     '1.4.10-alpha.2',
+27 silly addNameRange     '1.4.10-alpha.3',
+27 silly addNameRange     '1.14.10',
+27 silly addNameRange     '1.14.11',
+27 silly addNameRange     '1.14.12',
+27 silly addNameRange     '1.15.0',
+27 silly addNameRange     '1.15.1',
+27 silly addNameRange     '1.15.2-alpha.1',
+27 silly addNameRange     '1.15.2-alpha.2',
+27 silly addNameRange     '1.16.0',
+27 silly addNameRange     '1.16.1',
+27 silly addNameRange     '1.17.0',
+27 silly addNameRange     '1.17.1',
+27 silly addNameRange     '1.17.2',
+27 silly addNameRange     '1.17.3',
+27 silly addNameRange     '1.17.4-alpha.1',
+27 silly addNameRange     '1.17.4-alpha.2',
+27 silly addNameRange     '1.17.4',
+27 silly addNameRange     '1.17.5-alpha.1',
+27 silly addNameRange     '1.17.5-alpha.2',
+27 silly addNameRange     '1.17.5',
+27 silly addNameRange     '1.18.0',
+27 silly addNameRange     '1.18.1-alpha.1',
+27 silly addNameRange     '1.18.1-alpha.2',
+27 silly addNameRange     '1.18.1',
+27 silly addNameRange     '1.18.2-alpha.1',
+27 silly addNameRange     '1.18.2',
+27 silly addNameRange     '1.18.3',
+27 silly addNameRange     '1.18.4',
+27 silly addNameRange     '1.18.5',
+27 silly addNameRange     '1.18.6',
+27 silly addNameRange     '1.18.7',
+27 silly addNameRange     '1.18.8',
+27 silly addNameRange     '1.18.9',
+27 silly addNameRange     '1.18.10',
+27 silly addNameRange     '1.18.11',
+27 silly addNameRange     '1.19.0',
+27 silly addNameRange     '1.19.1',
+27 silly addNameRange     '1.19.2',
+27 silly addNameRange     '1.19.3',
+27 silly addNameRange     '1.19.4',
+27 silly addNameRange     '2.0.0',
+27 silly addNameRange     '2.0.1-alpha.1',
+27 silly addNameRange     '2.0.1-alpha.2',
+27 silly addNameRange     '2.0.1-alpha.3',
+27 silly addNameRange     '2.0.1',
+27 silly addNameRange     '2.0.2',
+27 silly addNameRange     '2.0.3',
+27 silly addNameRange     '2.0.4',
+27 silly addNameRange     '2.0.5',
+27 silly addNameRange     '2.0.6',
+27 silly addNameRange     '2.0.7',
+27 silly addNameRange     '2.0.8-alpha.a',
+27 silly addNameRange     '2.0.8',
+27 silly addNameRange     '2.0.8-alpha.1',
+27 silly addNameRange     '2.0.9',
+27 silly addNameRange     '2.0.10-alpha.1',
+27 silly addNameRange     '2.0.10-alpha.2',
+27 silly addNameRange     '2.0.10',
+27 silly addNameRange     '2.0.11-alpha.1',
+27 silly addNameRange     '2.0.11',
+27 silly addNameRange     '2.0.12-alpha.1',
+27 silly addNameRange     '2.0.12-alpha.2',
+27 silly addNameRange     '2.0.12-alpha.3',
+27 silly addNameRange     '2.0.12',
+27 silly addNameRange     '2.0.13-alpha.1',
+27 silly addNameRange     '2.0.13',
+27 silly addNameRange     '2.0.14-alpha.1',
+27 silly addNameRange     '2.0.14',
+27 silly addNameRange     '2.0.15',
+27 silly addNameRange     '2.0.16',
+27 silly addNameRange     '2.0.17',
+27 silly addNameRange     '2.0.18',
+27 silly addNameRange     '2.0.19',
+27 silly addNameRange     '2.0.20',
+27 silly addNameRange     '2.0.21',
+27 silly addNameRange     '2.0.22',
+27 silly addNameRange     '3.0.0',
+27 silly addNameRange     '3.0.1',
+27 silly addNameRange     '3.0.2',
+27 silly addNameRange     '3.0.3',
+27 silly addNameRange     '3.1.0',
+27 silly addNameRange     '3.1.1',
+27 silly addNameRange     '3.1.2',
+27 silly addNameRange     '3.1.3',
+27 silly addNameRange     '3.1.4',
+27 silly addNameRange     '0.0.0-development',
+27 silly addNameRange     '3.1.5',
+27 silly addNameRange     '3.1.6',
+27 silly addNameRange     '3.1.7' ] ]
+28 verbose addNamed [ 'nodemon', '3.1.7' ]
+29 verbose addNamed [ '3.1.7', '3.1.7' ]
+30 silly lockFile 8e59e6c2-nodemon-3-1-7 nodemon@3.1.7
+31 verbose lock nodemon@3.1.7 C:\Users\mishr\AppData\Roaming\npm-cache\8e59e6c2-nodemon-3-1-7.lock
+32 silly lockFile 95eb68e7-js-org-nodemon-nodemon-3-1-7-tgz https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz
+33 verbose lock https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz C:\Users\mishr\AppData\Roaming\npm-cache\95eb68e7-js-org-nodemon-nodemon-3-1-7-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz',
+34 verbose addRemoteTarball   '07cb1f455f8bece6a499e0d72b5e029485521a54' ]
+35 info retry fetch attempt 1 at 22:54:34
+36 verbose fetch to= C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+37 http GET https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz
+38 http 200 https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz
+39 silly shasum updated bytes 63654
+40 info shasum 07cb1f455f8bece6a499e0d72b5e029485521a54
+40 info shasum C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+41 verbose tar unpack C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+42 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+43 verbose lock C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package C:\Users\mishr\AppData\Roaming\npm-cache\9daac0a3-4450-0-05686314473859966-package.lock
+44 silly lockFile bf0f704f-4450-0-05686314473859966-tmp-tgz C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+45 verbose lock C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz C:\Users\mishr\AppData\Roaming\npm-cache\bf0f704f-4450-0-05686314473859966-tmp-tgz.lock
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry bin/windows-kill.exe
+49 silly gunzTarPerm extractEntry lib/rules/add.js
+50 silly gunzTarPerm extractEntry lib/utils/bus.js
+51 silly gunzTarPerm extractEntry lib/utils/clone.js
+52 silly gunzTarPerm extractEntry lib/utils/colour.js
+53 silly gunzTarPerm extractEntry lib/config/command.js
+54 silly gunzTarPerm extractEntry lib/config/defaults.js
+55 silly gunzTarPerm extractEntry lib/config/exec.js
+56 silly gunzTarPerm extractEntry lib/cli/index.js
+57 silly gunzTarPerm extractEntry lib/config/index.js
+58 silly gunzTarPerm extractEntry lib/help/index.js
+59 silly gunzTarPerm extractEntry lib/index.js
+60 silly gunzTarPerm extractEntry lib/monitor/index.js
+61 silly gunzTarPerm extractEntry lib/rules/index.js
+62 silly gunzTarPerm extractEntry lib/utils/index.js
+63 silly gunzTarPerm extractEntry lib/config/load.js
+64 silly gunzTarPerm extractEntry lib/utils/log.js
+65 silly gunzTarPerm extractEntry lib/monitor/match.js
+66 silly gunzTarPerm extractEntry lib/utils/merge.js
+67 silly gunzTarPerm extractEntry bin/nodemon.js
+68 silly gunzTarPerm extractEntry lib/nodemon.js
+69 silly gunzTarPerm extractEntry lib/cli/parse.js
+70 silly gunzTarPerm extractEntry lib/rules/parse.js
+71 silly gunzTarPerm extractEntry lib/monitor/run.js
+72 silly gunzTarPerm extractEntry lib/monitor/signals.js
+73 silly gunzTarPerm extractEntry lib/spawn.js
+74 silly gunzTarPerm extractEntry lib/version.js
+75 silly gunzTarPerm extractEntry lib/monitor/watch.js
+76 silly gunzTarPerm extractEntry .prettierrc.json
+77 silly gunzTarPerm extractEntry jsconfig.json
+78 silly gunzTarPerm extractEntry package.json
+79 silly gunzTarPerm extractEntry README.md
+80 silly gunzTarPerm extractEntry index.d.ts
+81 silly gunzTarPerm extractEntry doc/cli/authors.txt
+82 silly gunzTarPerm extractEntry doc/cli/config.txt
+83 silly gunzTarPerm extractEntry doc/cli/help.txt
+84 silly gunzTarPerm extractEntry doc/cli/logo.txt
+85 silly gunzTarPerm extractEntry doc/cli/options.txt
+86 silly gunzTarPerm extractEntry doc/cli/topics.txt
+87 silly gunzTarPerm extractEntry doc/cli/usage.txt
+88 silly gunzTarPerm extractEntry doc/cli/whoami.txt
+89 verbose read json C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package\package.json
+90 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+91 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+92 silly lockFile bf0f704f-4450-0-05686314473859966-tmp-tgz C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+93 silly lockFile bf0f704f-4450-0-05686314473859966-tmp-tgz C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\tmp.tgz
+94 verbose from cache C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package\package.json
+95 verbose tar pack [ 'C:\\Users\\mishr\\AppData\\Roaming\\npm-cache\\nodemon\\3.1.7\\package.tgz',
+95 verbose tar pack   'C:\\Users\\mishr\\AppData\\Local\\Temp\\npm-10112\\1732469074450-0.05686314473859966\\package' ]
+96 verbose tarball C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+97 verbose folder C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+98 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+99 verbose lock C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package C:\Users\mishr\AppData\Roaming\npm-cache\9daac0a3-4450-0-05686314473859966-package.lock
+100 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+101 verbose lock C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz C:\Users\mishr\AppData\Roaming\npm-cache\cf1b5c37--cache-nodemon-3-1-7-package-tgz.lock
+102 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+103 silly lockFile 9daac0a3-4450-0-05686314473859966-package C:\Users\mishr\AppData\Local\Temp\npm-10112\1732469074450-0.05686314473859966\package
+104 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+105 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+106 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+107 verbose lock C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package C:\Users\mishr\AppData\Roaming\npm-cache\18fbf507--npm-cache-nodemon-3-1-7-package.lock
+108 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+109 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+110 verbose tar unpack C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+111 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+112 verbose lock C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package C:\Users\mishr\AppData\Roaming\npm-cache\18fbf507--npm-cache-nodemon-3-1-7-package.lock
+113 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+114 verbose lock C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz C:\Users\mishr\AppData\Roaming\npm-cache\cf1b5c37--cache-nodemon-3-1-7-package-tgz.lock
+115 silly gunzTarPerm modes [ '755', '644' ]
+116 silly gunzTarPerm extractEntry package.json
+117 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+118 silly gunzTarPerm extractEntry README.md
+119 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+120 silly gunzTarPerm extractEntry LICENSE
+121 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+122 silly gunzTarPerm extractEntry .prettierrc.json
+123 silly gunzTarPerm modified mode [ '.prettierrc.json', 438, 420 ]
+124 silly gunzTarPerm extractEntry bin/nodemon.js
+125 silly gunzTarPerm modified mode [ 'bin/nodemon.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry bin/windows-kill.exe
+127 silly gunzTarPerm modified mode [ 'bin/windows-kill.exe', 438, 420 ]
+128 silly gunzTarPerm extractEntry doc/cli/authors.txt
+129 silly gunzTarPerm modified mode [ 'doc/cli/authors.txt', 438, 420 ]
+130 silly gunzTarPerm extractEntry doc/cli/config.txt
+131 silly gunzTarPerm modified mode [ 'doc/cli/config.txt', 438, 420 ]
+132 silly gunzTarPerm extractEntry doc/cli/help.txt
+133 silly gunzTarPerm modified mode [ 'doc/cli/help.txt', 438, 420 ]
+134 silly gunzTarPerm extractEntry doc/cli/logo.txt
+135 silly gunzTarPerm modified mode [ 'doc/cli/logo.txt', 438, 420 ]
+136 silly gunzTarPerm extractEntry doc/cli/options.txt
+137 silly gunzTarPerm modified mode [ 'doc/cli/options.txt', 438, 420 ]
+138 silly gunzTarPerm extractEntry doc/cli/topics.txt
+139 silly gunzTarPerm modified mode [ 'doc/cli/topics.txt', 438, 420 ]
+140 silly gunzTarPerm extractEntry doc/cli/usage.txt
+141 silly gunzTarPerm modified mode [ 'doc/cli/usage.txt', 438, 420 ]
+142 silly gunzTarPerm extractEntry doc/cli/whoami.txt
+143 silly gunzTarPerm modified mode [ 'doc/cli/whoami.txt', 438, 420 ]
+144 silly gunzTarPerm extractEntry index.d.ts
+145 silly gunzTarPerm modified mode [ 'index.d.ts', 438, 420 ]
+146 silly gunzTarPerm extractEntry jsconfig.json
+147 silly gunzTarPerm modified mode [ 'jsconfig.json', 438, 420 ]
+148 silly gunzTarPerm extractEntry lib/index.js
+149 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry lib/nodemon.js
+151 silly gunzTarPerm modified mode [ 'lib/nodemon.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry lib/spawn.js
+153 silly gunzTarPerm modified mode [ 'lib/spawn.js', 438, 420 ]
+154 silly gunzTarPerm extractEntry lib/version.js
+155 silly gunzTarPerm modified mode [ 'lib/version.js', 438, 420 ]
+156 silly gunzTarPerm extractEntry lib/cli/index.js
+157 silly gunzTarPerm modified mode [ 'lib/cli/index.js', 438, 420 ]
+158 silly gunzTarPerm extractEntry lib/cli/parse.js
+159 silly gunzTarPerm modified mode [ 'lib/cli/parse.js', 438, 420 ]
+160 silly gunzTarPerm extractEntry lib/config/command.js
+161 silly gunzTarPerm modified mode [ 'lib/config/command.js', 438, 420 ]
+162 silly gunzTarPerm extractEntry lib/config/defaults.js
+163 silly gunzTarPerm modified mode [ 'lib/config/defaults.js', 438, 420 ]
+164 silly gunzTarPerm extractEntry lib/config/exec.js
+165 silly gunzTarPerm modified mode [ 'lib/config/exec.js', 438, 420 ]
+166 silly gunzTarPerm extractEntry lib/config/index.js
+167 silly gunzTarPerm modified mode [ 'lib/config/index.js', 438, 420 ]
+168 silly gunzTarPerm extractEntry lib/config/load.js
+169 silly gunzTarPerm modified mode [ 'lib/config/load.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry lib/help/index.js
+171 silly gunzTarPerm modified mode [ 'lib/help/index.js', 438, 420 ]
+172 silly gunzTarPerm extractEntry lib/monitor/index.js
+173 silly gunzTarPerm modified mode [ 'lib/monitor/index.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry lib/monitor/match.js
+175 silly gunzTarPerm modified mode [ 'lib/monitor/match.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry lib/monitor/run.js
+177 silly gunzTarPerm modified mode [ 'lib/monitor/run.js', 438, 420 ]
+178 silly gunzTarPerm extractEntry lib/monitor/signals.js
+179 silly gunzTarPerm modified mode [ 'lib/monitor/signals.js', 438, 420 ]
+180 silly gunzTarPerm extractEntry lib/monitor/watch.js
+181 silly gunzTarPerm modified mode [ 'lib/monitor/watch.js', 438, 420 ]
+182 silly gunzTarPerm extractEntry lib/rules/add.js
+183 silly gunzTarPerm modified mode [ 'lib/rules/add.js', 438, 420 ]
+184 silly gunzTarPerm extractEntry lib/rules/index.js
+185 silly gunzTarPerm modified mode [ 'lib/rules/index.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry lib/rules/parse.js
+187 silly gunzTarPerm modified mode [ 'lib/rules/parse.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry lib/utils/bus.js
+189 silly gunzTarPerm modified mode [ 'lib/utils/bus.js', 438, 420 ]
+190 silly gunzTarPerm extractEntry lib/utils/clone.js
+191 silly gunzTarPerm modified mode [ 'lib/utils/clone.js', 438, 420 ]
+192 silly gunzTarPerm extractEntry lib/utils/colour.js
+193 silly gunzTarPerm modified mode [ 'lib/utils/colour.js', 438, 420 ]
+194 silly gunzTarPerm extractEntry lib/utils/index.js
+195 silly gunzTarPerm modified mode [ 'lib/utils/index.js', 438, 420 ]
+196 silly gunzTarPerm extractEntry lib/utils/log.js
+197 silly gunzTarPerm modified mode [ 'lib/utils/log.js', 438, 420 ]
+198 silly gunzTarPerm extractEntry lib/utils/merge.js
+199 silly gunzTarPerm modified mode [ 'lib/utils/merge.js', 438, 420 ]
+200 verbose read json C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package\package.json
+201 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+202 silly lockFile 18fbf507--npm-cache-nodemon-3-1-7-package C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package
+203 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+204 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+205 silly shasum updated bytes 65138
+206 info shasum 32d0c61d6580f7b8c010df651150ddbf7325336f
+206 info shasum C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+207 verbose from cache C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package\package.json
+208 verbose chmod C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz 644
+209 silly chown skipping for windows C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+210 silly lockFile 95eb68e7-js-org-nodemon-nodemon-3-1-7-tgz https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz
+211 silly lockFile 95eb68e7-js-org-nodemon-nodemon-3-1-7-tgz https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz
+212 silly lockFile 8e59e6c2-nodemon-3-1-7 nodemon@3.1.7
+213 silly lockFile 8e59e6c2-nodemon-3-1-7 nodemon@3.1.7
+214 silly lockFile 4f5e51c6-nodemon nodemon@
+215 silly lockFile 4f5e51c6-nodemon nodemon@
+216 silly resolved [ { name: 'nodemon',
+216 silly resolved     homepage: 'https://nodemon.io',
+216 silly resolved     author: { name: 'Remy Sharp', url: 'https://github.com/remy' },
+216 silly resolved     bin: { nodemon: './bin/nodemon.js' },
+216 silly resolved     engines: { node: '>=10' },
+216 silly resolved     repository: { type: 'git', url: 'https://github.com/remy/nodemon.git' },
+216 silly resolved     description: 'Simple monitor script for use during development of a Node.js app.',
+216 silly resolved     keywords:
+216 silly resolved      [ 'cli',
+216 silly resolved        'monitor',
+216 silly resolved        'monitor',
+216 silly resolved        'development',
+216 silly resolved        'restart',
+216 silly resolved        'autoload',
+216 silly resolved        'reload',
+216 silly resolved        'terminal' ],
+216 silly resolved     license: 'MIT',
+216 silly resolved     types: './index.d.ts',
+216 silly resolved     main: './lib/nodemon',
+216 silly resolved     scripts:
+216 silly resolved      { commitmsg: 'commitlint -e',
+216 silly resolved        coverage: 'istanbul cover _mocha -- --timeout 30000 --ui bdd --reporter list test/**/*.test.js',
+216 silly resolved        lint: 'eslint lib/**/*.js',
+216 silly resolved        test: 'npm run lint && npm run spec',
+216 silly resolved        spec: 'for FILE in test/**/*.test.js; do echo $FILE; TEST=1 mocha --exit --timeout 30000 $FILE; if [ $? -ne 0 ]; then exit 1; fi; sleep 1; done',
+216 silly resolved        postspec: 'npm run clean',
+216 silly resolved        clean: 'rm -rf test/fixtures/test*.js test/fixtures/test*.md',
+216 silly resolved        web: 'node web',
+216 silly resolved        'semantic-release': 'semantic-release',
+216 silly resolved        prepush: 'npm run lint',
+216 silly resolved        killall: 'ps auxww | grep node | grep -v grep | awk \'{ print $2 }\' | xargs kill -9' },
+216 silly resolved     devDependencies:
+216 silly resolved      { '@commitlint/cli': '^11.0.0',
+216 silly resolved        '@commitlint/config-conventional': '^11.0.0',
+216 silly resolved        async: '1.4.2',
+216 silly resolved        'coffee-script': '~1.7.1',
+216 silly resolved        eslint: '^7.32.0',
+216 silly resolved        husky: '^7.0.4',
+216 silly resolved        mocha: '^2.5.3',
+216 silly resolved        nyc: '^15.1.0',
+216 silly resolved        proxyquire: '^1.8.0',
+216 silly resolved        'semantic-release': '^18.0.0',
+216 silly resolved        should: '~4.0.0' },
+216 silly resolved     dependencies:
+216 silly resolved      { chokidar: '^3.5.2',
+216 silly resolved        debug: '^4',
+216 silly resolved        'ignore-by-default': '^1.0.1',
+216 silly resolved        minimatch: '^3.1.2',
+216 silly resolved        'pstree.remy': '^1.1.8',
+216 silly resolved        semver: '^7.5.3',
+216 silly resolved        'simple-update-notifier': '^2.0.0',
+216 silly resolved        'supports-color': '^5.5.0',
+216 silly resolved        touch: '^3.1.0',
+216 silly resolved        undefsafe: '^2.0.5' },
+216 silly resolved     version: '3.1.7',
+216 silly resolved     funding:
+216 silly resolved      { type: 'opencollective',
+216 silly resolved        url: 'https://opencollective.com/nodemon' },
+216 silly resolved     readme: '<p align="center">\n  <a href="https://nodemon.io/"><img src="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png" alt="Nodemon Logo"></a>\n</p>\n\n# nodemon\n\nnodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.\n\nnodemon does **not** require *any* additional changes to your code or method of development. nodemon is a replacement wrapper for `node`. To use `nodemon`, replace the word `node` on the command line when executing your script.\n\n[![NPM version](https://badge.fury.io/js/nodemon.svg)](https://npmjs.org/package/nodemon)\n[![Backers on Open Collective](https://opencollective.com/nodemon/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/nodemon/sponsors/badge.svg)](#sponsors)\n\n# Installation\n\nEither through cloning with git or by using [npm](http://npmjs.org) (the recommended way):\n\n```bash\nnpm install -g nodemon # or using yarn: yarn global add nodemon\n```\n\nAnd nodemon will be installed globally to your system path.\n\nYou can also install nodemon as a development dependency:\n\n```bash\nnpm install --save-dev nodemon # or using yarn: yarn add nodemon -D\n```\n\nWith a local installation, nodemon will not be available in your system path or you can\'t use it directly from the command line. Instead, the local installation of nodemon can be run by calling it from within an npm script (such as `npm start`) or using `npx nodemon`.\n\n# Usage\n\nnodemon wraps your application, so you can pass all the arguments you would normally pass to your app:\n\n```bash\nnodemon [your node app]\n```\n\nFor CLI options, use the `-h` (or `--help`) argument:\n\n```bash\nnodemon -h\n```\n\nUsing nodemon is simple, if my application accepted a host and port as the arguments, I would start it as so:\n\n```bash\nnodemon ./server.js localhost 8080\n```\n\nAny output from this script is prefixed with `[nodemon]`, otherwise all output from your application, errors included, will be echoed out as expected.\n\nYou can also pass the `inspect` flag to node through the command line as you would normally:\n\n```bash\nnodemon --inspect ./server.js 80\n```\n\nIf you have a `package.json` file for your app, you can omit the main script entirely and nodemon will read the `package.json` for the `main` property and use that value as the app ([ref](https://github.com/remy/nodemon/issues/14)).\n\nnodemon will also search for the `scripts.start` property in `package.json` (as of nodemon 1.1.x).\n\nAlso check out the [FAQ](https://github.com/remy/nodemon/blob/master/faq.md) or [issues](https://github.com/remy/nodemon/issues) for nodemon.\n\n## Automatic re-running\n\nnodemon was originally written to restart hanging processes such as web servers, but now supports apps that cleanly exit. If your script exits cleanly, nodemon will continue to monitor the directory (or directories) and restart the script if there are any changes.\n\n## Manual restarting\n\nWhilst nodemon is running, if you need to manually restart your application, instead of stopping and restart nodemon, you can type `rs` with a carriage return, and nodemon will restart your process.\n\n## Config files\n\nnodemon supports local and global configuration files. These are usually named `nodemon.json` and can be located in the current working directory or in your home directory. An alternative local configuration file can be specified with the `--config <file>` option.\n\nThe specificity is as follows, so that a command line argument will always override the config file settings:\n\n- command line arguments\n- local config\n- global config\n\nA config file can take any of the command line arguments as JSON key values, for example:\n\n```json\n{\n  "verbose": true,\n  "ignore": ["*.test.js", "**/fixtures/**"],\n  "execMap": {\n    "rb": "ruby",\n    "pde": "processing --sketch={{pwd}} --run"\n  }\n}\n```\n\nThe above `nodemon.json` file might be my global config so that I have support for ruby files and processing files, and I can run `nodemon demo.pde` and nodemon will automatically know how to run the script even though out of the box support for processing scripts.\n\nA further example of options can be seen in [sample-nodemon.md](https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md)\n\n### package.json\n\nIf you want to keep all your package configurations in one place, nodemon supports using `package.json` for configuration.\nSpecify the config in the same format as you would for a config file but under `nodemonConfig` in the `package.json` file, for example, take the following `package.json`:\n\n```json\n{\n  "name": "nodemon",\n  "homepage": "http://nodemon.io",\n  "...": "... other standard package.json values",\n  "nodemonConfig": {\n    "ignore": ["**/test/**", "**/docs/**"],\n    "delay": 2500\n  }\n}\n```\n\nNote that if you specify a `--config` file or provide a local `nodemon.json` any `package.json` config is ignored.\n\n*This section needs better documentation, but for now you can also see `nodemon --help config` ([also here](https://github.com/remy/nodemon/blob/master/doc/cli/config.txt))*.\n\n## Using nodemon as a module\n\nPlease see [doc/requireable.md](doc/requireable.md)\n\n## Using nodemon as child process\n\nPlease see [doc/events.md](doc/events.md#Using_nodemon_as_child_process)\n\n## Running non-node scripts\n\nnodemon can also be used to execute and monitor other programs. nodemon will read the file extension of the script being run and monitor that extension instead of `.js` if there\'s no `nodemon.json`:\n\n```bash\nnodemon --exec "python -v" ./app.py\n```\n\nNow nodemon will run `app.py` with python in verbose mode (note that if you\'re not passing args to the exec program, you don\'t need the quotes), and look for new or modified files with the `.py` extension.\n\n### Default executables\n\nUsing the `nodemon.json` config file, you can define your own default executables using the `execMap` property. This is particularly useful if you\'re working with a language that isn\'t supported by default by nodemon.\n\nTo add support for nodemon to know about the `.pl` extension (for Perl), the `nodemon.json` file would add:\n\n```json\n{\n  "execMap": {\n    "pl": "perl"\n  }\n}\n```\n\nNow running the following, nodemon will know to use `perl` as the executable:\n\n```bash\nnodemon script.pl\n```\n\nIt\'s generally recommended to use the global `nodemon.json` to add your own `execMap` options. However, if there\'s a common default that\'s missing, this can be merged in to the project so that nodemon supports it by default, by changing [default.js](https://github.com/remy/nodemon/blob/master/lib/config/defaults.js) and sending a pull request.\n\n## Monitoring multiple directories\n\nBy default nodemon monitors the current working directory. If you want to take control of that option, use the `--watch` option to add specific paths:\n\n```bash\nnodemon --watch app --watch libs app/server.js\n```\n\nNow nodemon will only restart if there are changes in the `./app` or `./libs` directory. By default nodemon will traverse sub-directories, so there\'s no need in explicitly including sub-directories.\n\nNodemon also supports unix globbing, e.g `--watch \'./lib/*\'`. The globbing pattern must be quoted. For advanced globbing, [see `picomatch` documentation](https://github.com/micromatch/picomatch#advanced-globbing), the library that nodemon uses through `chokidar` (which in turn uses it through `anymatch`).\n\n## Specifying extension watch list\n\nBy default, nodemon looks for files with the `.js`, `.mjs`, `.coffee`, `.litcoffee`, and `.json` extensions. If you use the `--exec` option and monitor `app.py` nodemon will monitor files with the extension of `.py`. However, you can specify your own list with the `-e` (or `--ext`) switch like so:\n\n```bash\nnodemon -e js,pug\n```\n\nNow nodemon will restart on any changes to files in the directory (or subdirectories) with the extensions `.js`, `.pug`.\n\n## Ignoring files\n\nBy default, nodemon will only restart when a `.js` JavaScript file changes. In some cases you will want to ignore some specific files, directories or file patterns, to prevent nodemon from prematurely restarting your application.\n\nThis can be done via the command line:\n\n```bash\nnodemon --ignore lib/ --ignore tests/\n```\n\nOr specific files can be ignored:\n\n```bash\nnodemon --ignore lib/app.js\n```\n\nPatterns can also be ignored (but be sure to quote the arguments):\n\n```bash\nnodemon --ignore \'lib/*.js\'\n```\n\n**Important** the ignore rules are patterns matched to the full absolute path, and this determines how many files are monitored. If using a wild card glob pattern, it needs to be used as `**` or omitted entirely. For example, `nodemon --ignore \'**/test/**\'` will work, whereas `--ignore \'*/test/*\'` will not.\n\nNote that by default, nodemon will ignore the `.git`, `node_modules`, `bower_components`, `.nyc_output`, `coverage` and `.sass-cache` directories and *add* your ignored patterns to the list. If you want to indeed watch a directory like `node_modules`, you need to [override the underlying default ignore rules](https://github.com/remy/nodemon/blob/master/faq.md#overriding-the-underlying-default-ignore-rules).\n\n## Application isn\'t restarting\n\nIn some networked environments (such as a container running nodemon reading across a mounted drive), you will need to use the `legacyWatch: true` which enables Chokidar\'s polling.\n\nVia the CLI, use either `--legacy-watch` or `-L` for short:\n\n```bash\nnodemon -L\n```\n\nThough this should be a last resort as it will poll every file it can find.\n\n## Delaying restarting\n\nIn some situations, you may want to wait until a number of files have changed. The timeout before checking for new file changes is 1 second. If you\'re uploading a number of files and it\'s taking some number of seconds, this could cause your app to restart multiple times unnecessarily.\n\nTo add an extra throttle, or delay restarting, use the `--delay` command:\n\n```bash\nnodemon --delay 10 server.js\n```\n\nFor more precision, milliseconds can be specified.  Either as a float:\n\n```bash\nnodemon --delay 2.5 server.js\n```\n\nOr using the time specifier (ms):\n\n```bash\nnodemon --delay 2500ms server.js\n```\n\nThe delay figure is number of seconds (or milliseconds, if specified) to delay before restarting. So nodemon will only restart your app the given number of seconds after the *last* file change.\n\nIf you are setting this value in `nodemon.json`, the value will always be interpreted in milliseconds. E.g., the following are equivalent:\n\n```bash\nnodemon --delay 2.5\n\n{\n  "delay": 2500\n}\n```\n\n## Gracefully reloading down your script\n\nIt is possible to have nodemon send any signal that you specify to your application.\n\n```bash\nnodemon --signal SIGHUP server.js\n```\n\nYour application can handle the signal as follows.\n\n```js\nprocess.on("SIGHUP", function () {\n  reloadSomeConfiguration();\n  process.kill(process.pid, "SIGTERM");\n})\n```\n\nPlease note that nodemon will send this signal to every process in the process tree.\n\nIf you are using `cluster`, then each workers (as well as the master) will receive the signal. If you wish to terminate all workers on receiving a `SIGHUP`, a common pattern is to catch the `SIGHUP` in the master, and forward `SIGTERM` to all workers, while ensuring that all workers ignore `SIGHUP`.\n\n```js\nif (cluster.isMaster) {\n  process.on("SIGHUP", function () {\n    for (const worker of Object.values(cluster.workers)) {\n      worker.process.kill("SIGTERM");\n    }\n  });\n} else {\n  process.on("SIGHUP", function() {})\n}\n```\n\n## Controlling shutdown of your script\n\nnodemon sends a kill signal to your application when it sees a file update. If you need to clean up on shutdown inside your script you can capture the kill signal and handle it yourself.\n\nThe following example will listen once for the `SIGUSR2` signal (used by nodemon to restart), run the clean up process and then kill itself for nodemon to continue control:\n\n```js\n// important to use `on` and not `once` as nodemon can re-send the kill signal\nprocess.on(\'SIGUSR2\', function () {\n  gracefulShutdown(function () {\n    process.kill(process.pid, \'SIGTERM\');\n  });\n});\n```\n\nNote that the `process.kill` is *only* called once your shutdown jobs are complete. Hat tip to [Benjie Gillam](http://www.benjiegillam.com/2011/08/node-js-clean-restart-and-faster-development-with-nodemon/) for writing this technique up.\n\n## Triggering events when nodemon state changes\n\nIf you want growl like notifications when nodemon restarts or to trigger an action when an event happens, then you can either `require` nodemon or add event actions to your `nodemon.json` file.\n\nFor example, to trigger a notification on a Mac when nodemon restarts, `nodemon.json` looks like this:\n\n```json\n{\n  "events": {\n    "restart": "osascript -e \'display notification \\"app restarted\\" with title \\"nodemon\\"\'"\n  }\n}\n```\n\nA full list of available events is listed on the [event states wiki](https://github.com/remy/nodemon/wiki/Events#states). Note that you can bind to both states and messages.\n\n## Pipe output to somewhere else\n\n```js\nnodemon({\n  script: ...,\n  stdout: false // important: this tells nodemon not to output to console\n}).on(\'readable\', function() { // the `readable` event indicates that data is ready to pick up\n  this.stdout.pipe(fs.createWriteStream(\'output.txt\'));\n  this.stderr.pipe(fs.createWriteStream(\'err.txt\'));\n});\n```\n\n## Using nodemon in your gulp workflow\n\nCheck out the [gulp-nodemon](https://github.com/JacksonGariety/gulp-nodemon) plugin to integrate nodemon with the rest of your project\'s gulp workflow.\n\n## Using nodemon in your Grunt workflow\n\nCheck out the [grunt-nodemon](https://github.com/ChrisWren/grunt-nodemon) plugin to integrate nodemon with the rest of your project\'s grunt workflow.\n\n## Pronunciation\n\n> nodemon, is it pronounced: node-mon, no-demon or node-e-mon (like pokémon)?\n\nWell...I\'ve been asked this many times before. I like that I\'ve been asked this before. There\'s been bets as to which one it actually is.\n\nThe answer is simple, but possibly frustrating. I\'m not saying (how I pronounce it). It\'s up to you to call it as you like. All answers are correct :)\n\n## Design principles\n\n- Fewer flags is better\n- Works across all platforms\n- Fewer features\n- Let individuals build on top of nodemon\n- Offer all CLI functionality as an API\n- Contributions must have and pass tests\n\nNodemon is not perfect, and CLI arguments has sprawled beyond where I\'m completely happy, but perhaps it can be reduced a little one day.\n\n## FAQ\n\nSee the [FAQ](https://github.com/remy/nodemon/blob/master/faq.md) and please add your own questions if you think they would help others.\n\n## Backers\n\nThank you to all [our backers](https://opencollective.com/nodemon#backer)! 🙏\n\n[![nodemon backers](https://opencollective.com/nodemon/backers.svg?width=890)](https://opencollective.com/nodemon#backers)\n\n## Sponsors\n\nSupport this project by becoming a sponsor. Your logo will show up here with a link to your website. [Sponsor this project today ❤️](https://opencollective.com/nodemon#sponsor)\n\n<div style="overflow: hidden; margin-bottom: 80px;"><!--oc--><a title=\'buy instagram followers on skweezer.net today\' data-id=\'532050\' data-tier=\'0\' href=\'https://skweezer.net/buy-instagram-followers\'><img alt=\'buy instagram followers on skweezer.net today\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/b0ddcb1b-9054-4220-8d72-05131b28a2bb/logo-skweezer-icon.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Get real, active Instagram followers delivered straight to your account in minutes. Buy Instagram followers at Thunderclap.it starting just at $2.79\' data-id=\'591068\' data-tier=\'0\' href=\'https://thunderclap.it/buy-instagram-followers\'><img alt=\'Get real, active Instagram followers delivered straight to your account in minutes. Buy Instagram followers at Thunderclap.it starting just at $2.79\' src=\'https://logo.clearbit.com/thunderclap.it\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Netpositive\' data-id=\'162674\' data-tier=\'1\' href=\'https://najlepsibukmacherzy.pl/ranking-legalnych-bukmacherow/\'><img alt=\'Netpositive\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/52acecf0-608a-11eb-b17f-5bca7c67fe7b.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'KasynoHEX\' data-id=\'177376\' data-tier=\'1\' href=\'https://pl.polskiekasynohex.org/\'><img alt=\'KasynoHEX\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/2bb0d6e0-99c8-11ea-9349-199aa0d5d24a.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Casinoonlineaams.com\' data-id=\'198634\' data-tier=\'1\' href=\'https://www.casinoonlineaams.com\'><img alt=\'Casinoonlineaams.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/61bcf1d0-43ce-11ed-b562-6bf567fce1fd.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Best online casinos not on GamStop in the UK\' data-id=\'243140\' data-tier=\'1\' href=\'https://casino-wise.com/\'><img alt=\'Best online casinos not on GamStop in the UK\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/f889d209-a931-4c06-a529-fe1f86c411bf/casino-wise-logo.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'TheCasinoDB\' data-id=\'270835\' data-tier=\'1\' href=\'https://www.thecasinodb.com\'><img alt=\'TheCasinoDB\' src=\'https://logo.clearbit.com/thecasinodb.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Marketing\' data-id=\'285700\' data-tier=\'1\' href=\'https://www.casinoutansvenskalicensen.se/\'><img alt=\'Marketing\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/ed105cb0-b01f-11ec-935f-77c14be20a90.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Rating of best betting sites in Australia\' data-id=\'303335\' data-tier=\'1\' href=\'https://hellsbet.com/en-au/\'><img alt=\'Rating of best betting sites in Australia\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/aeb99e10-d1ec-11ec-88be-f9a15ca9f6f8.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'inkedin\' data-id=\'305884\' data-tier=\'1\' href=\'https://inkedin.com\'><img alt=\'inkedin\' src=\'https://logo.clearbit.com/inkedin.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Goread.io\' data-id=\'320564\' data-tier=\'1\' href=\'https://goread.io/buy-instagram-followers\'><img alt=\'Goread.io\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/7d1302a0-0f33-11ed-a094-3dca78aec7cd.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Best Australian online casinos. Reviewed by Correct Casinos.\' data-id=\'322445\' data-tier=\'1\' href=\'https://www.correctcasinos.com/australian-online-casinos/\'><img alt=\'Best Australian online casinos. Reviewed by Correct Casinos.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/fef95200-1551-11ed-ba3f-410c614877c8.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'\' data-id=\'326865\' data-tier=\'1\' href=\'https://www.uudetkasinot.com\'><img alt=\'\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/b6055950-df00-11eb-9caa-b58f40adecd5.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Do My Online Class - NoNeedToStudy.com\' data-id=\'327241\' data-tier=\'1\' href=\'https://www.noneedtostudy.com/take-my-online-class/\'><img alt=\'Do My Online Class - NoNeedToStudy.com\' src=\'https://user-images.githubusercontent.com/13700/187039696-e2d8cd59-8b4e-438f-a052-69095212427d.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Slotmachineweb.com\' data-id=\'329195\' data-tier=\'1\' href=\'https://www.slotmachineweb.com/\'><img alt=\'Slotmachineweb.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/172f9eb0-22c2-11ed-a0b5-97427086b4aa.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Website dedicated to finding the best and safest licensed online casinos in India\' data-id=\'342390\' data-tier=\'1\' href=\'https://www.ghotala.com/\'><img alt=\'Website dedicated to finding the best and safest licensed online casinos in India\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/75afa9e0-4ac6-11ed-8d6a-fdcc8c0d0736.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'nongamstopcasinos.net\' data-id=\'367236\' data-tier=\'1\' href=\'https://uk.nongamstopcasinos.net/\'><img alt=\'nongamstopcasinos.net\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/fb8b5ba0-3904-11ed-8516-edd7b7687a36.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Scommesse777\' data-id=\'370216\' data-tier=\'1\' href=\'https://www.scommesse777.com/\'><img alt=\'Scommesse777\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/c0346cb0-7ad4-11ed-a9cf-49dc3536976e.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'At Casinoaustraliaonline.com, we review, compare and list all the best gambling sites for Aussies.\n\' data-id=\'380510\' data-tier=\'1\' href=\'https://www.casinoaustraliaonline.com/under-1-hour-withdrawal-casinos/\'><img alt=\'At Casinoaustraliaonline.com, we review, compare and list all the best gambling sites for Aussies.\n\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/7c3d81f0-8cad-11ed-b048-95ec46716b47.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Buy Instagram Likes\' data-id=\'411448\' data-tier=\'1\' href=\'https://poprey.com/\'><img alt=\'Buy Instagram Likes\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/fe650970-c21c-11ec-a499-b55e54a794b4.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Norway&apos;s biggest and most reliable online casino portal\' data-id=\'422431\' data-tier=\'1\' href=\'https://www.nettcasino.com/\'><img alt=\'Norway&apos;s biggest and most reliable online casino portal\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/5d739e1a-7813-489e-ab82-697daff8bf12/nettcasino.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'OnlineCasinosSpelen\' data-id=\'423738\' data-tier=\'1\' href=\'https://onlinecasinosspelen.com\'><img alt=\'OnlineCasinosSpelen\' src=\'https://logo.clearbit.com/onlinecasinosspelen.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Beoordelen van nieuwe online casino&apos;s 2023\' data-id=\'424449\' data-tier=\'1\' href=\'https://Nieuwe-Casinos.net\'><img alt=\'Beoordelen van nieuwe online casino&apos;s 2023\' src=\'https://logo.clearbit.com/Nieuwe-Casinos.net\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'CasinoZonderRegistratie.net - Nederlandse Top Casino&apos;s\' data-id=\'424450\' data-tier=\'1\' href=\'https://casinoZonderregistratie.net/\'><img alt=\'CasinoZonderRegistratie.net - Nederlandse Top Casino&apos;s\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/aeb624c0-7ae7-11ed-8d0e-bda59436695a.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'OnlineCasinoProfy is your guide to the world of gambling.\' data-id=\'426813\' data-tier=\'1\' href=\'https://polskiekasynaonline24.com/\'><img alt=\'OnlineCasinoProfy is your guide to the world of gambling.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/f8b0f6de-6ab5-4860-9688-709fe03873d3/2%201%20%282%29.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Famoid is a digital marketing agency that specializes in social media services and tools.\' data-id=\'434604\' data-tier=\'1\' href=\'https://famoid.com/\'><img alt=\'Famoid is a digital marketing agency that specializes in social media services and tools.\' src=\'https://logo.clearbit.com/famoid.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Gives a fun for our users\' data-id=\'443264\' data-tier=\'1\' href=\'https://slotoking.ua/games/all-slots/\'><img alt=\'Gives a fun for our users\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/94601d07-3205-4c60-9c2d-9b8194dbefb7/skg-blue.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'We are the leading Nearshore Technology Solutions company. We architect and engineer scalable and high-performing software solutions.\' data-id=\'452424\' data-tier=\'1\' href=\'https://www.bairesdev.com/sponsoring-open-source-projects/\'><img alt=\'We are the leading Nearshore Technology Solutions company. We architect and engineer scalable and high-performing software solutions.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/dc38bc3b-7430-4cf7-9b77-36467eb92915/logo8.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Buy real Instagram followers from Twicsy starting at only $2.97. Twicsy has been voted the best site to buy followers from the likes of US Magazine.\' data-id=\'453050\' data-tier=\'1\' href=\'https://twicsy.com/buy-instagram-followers\'><img alt=\'Buy real Instagram followers from Twicsy starting at only $2.97. Twicsy has been voted the best site to buy followers from the likes of US Magazine.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/f07b6f83-d0ed-43c6-91ae-ec8fa90512cd/twicsy-followers.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'SocialWick offers the best Instagram Followers in the market. If you are looking to boost your organic growth, buy Instagram followers from SocialWick\' data-id=\'462750\' data-tier=\'1\' href=\'https://www.socialwick.com/instagram/followers\'><img alt=\'SocialWick offers the best Instagram Followers in the market. If you are looking to boost your organic growth, buy Instagram followers from SocialWick\' src=\'https://logo.clearbit.com/socialwick.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Online United States Casinos\' data-id=\'466446\' data-tier=\'1\' href=\'https://www.onlineunitedstatescasinos.com/\'><img alt=\'Online United States Casinos\' src=\'https://logo.clearbit.com/onlineunitedstatescasinos.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Aviators\' data-id=\'471843\' data-tier=\'1\' href=\'https://aviators.com.br\'><img alt=\'Aviators\' src=\'https://github-production-user-asset-6210df.s3.amazonaws.com/13700/277616726-33b554c8-24e0-4570-b8ed-293fb2ab2448.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Online iGaming platform with reliable and trusted reviews.\' data-id=\'473786\' data-tier=\'1\' href=\'https://onlinecasinohex.ph/\'><img alt=\'Online iGaming platform with reliable and trusted reviews.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/b19cbf10-3a5e-11ed-9713-c7c7fc5beda8.svg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Online Casinos Australia\' data-id=\'Online Casinos Australia\' data-tier=\'1\' href=\'https://online-casinosaustralia.com/\'><img alt=\'Online Casinos Australia\' src=\'https://github-production-user-asset-6210df.s3.amazonaws.com/13700/268531585-c2b4e482-0409-4664-9aa2-95a62b0d606d.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Looking to boost your YouTube channel? Buy YouTube subscribers with Views4You and watch your audience grow!\' data-id=\'493616\' data-tier=\'1\' href=\'https://views4you.com/buy-youtube-subscribers/\'><img alt=\'Looking to boost your YouTube channel? Buy YouTube subscribers with Views4You and watch your audience grow!\' src=\'https://logo.clearbit.com/views4you.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Buy Telegram Members\' data-id=\'501897\' data-tier=\'1\' href=\'https://buycheapestfollowers.com/buy-telegram-channel-members\'><img alt=\'Buy Telegram Members\' src=\'https://github-production-user-asset-6210df.s3.amazonaws.com/13700/286696172-747dca05-a1e8-4d93-a9e9-95054d1566df.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'We review the entire iGaming industry from A to Z\' data-id=\'504258\' data-tier=\'1\' href=\'https://casinolandia.com\'><img alt=\'We review the entire iGaming industry from A to Z\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/5f858add-77f1-47a2-b577-39eecb299c8c/Logo264.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'free spins no deposit\' data-id=\'slotozilla\' data-tier=\'1\' href=\'https://www.slotozilla.com/au/free-spins\'><img alt=\'free spins no deposit\' src=\'https://github-production-user-asset-6210df.s3.amazonaws.com/13700/286693953-c68112b6-ebe6-49fd-af6a-5c810a54908d.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'aussiecasinoreviewer.com\' data-id=\'508822\' data-tier=\'1\' href=\'https://aussiecasinoreviewer.com/\'><img alt=\'aussiecasinoreviewer.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/6ffb5045-e33e-4314-a891-5286fa4a220f/Aussiecasinoreviewer%20logo%20(2)%20(2).jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'MEGAFAMOUS.com\' data-id=\'509686\' data-tier=\'1\' href=\'https://megafamous.com/buy-automatic-instagram-likes\'><img alt=\'MEGAFAMOUS.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/c0af8a5d-8fe7-4925-b357-cee797841913/MEGAFAMOUS%20Instagram%20Likes%20.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'PopularityBazaar helps you quickly grow your social media accounts. Buy 100% real likes, followers, views, comments, and more to kickstart your online presence.\' data-id=\'509894\' data-tier=\'1\' href=\'https://popularitybazaar.com/instagram-likes/\'><img alt=\'PopularityBazaar helps you quickly grow your social media accounts. Buy 100% real likes, followers, views, comments, and more to kickstart your online presence.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/a2878e26-3710-453f-9a41-80eeee60a2cc/Group%201.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Non-GamStop NonStop Casino\' data-id=\'510457\' data-tier=\'1\' href=\'https://uk.nonstopcasino.org/non-gamstop-casinos/\'><img alt=\'Non-GamStop NonStop Casino\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/0330c03a-71ea-477c-a4d8-7eb4795d6120/non-stop-casino.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'philippinescasinos.ph\' data-id=\'512007\' data-tier=\'1\' href=\'https://philippinescasinos.ph/gcash/\'><img alt=\'philippinescasinos.ph\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/b758f1b0-3211-464b-a19e-95e2a5f4fa22/PhilippinesCasinos%20bigger.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Incognito\' data-id=\'512350\' data-tier=\'1\' href=\'https://www.outlookindia.com/outlook-spotlight/casinos-not-on-gamstop-uk-news-302214\'><img alt=\'Incognito\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/fdf584c2-defe-4025-ab26-15e5c5ff607e/Non%20gamstop%20casino%20Outlookindia.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'NonGamStopBets Casinos not on GamStop\' data-id=\'515480\' data-tier=\'1\' href=\'https://www.nongamstopbets.com/casinos-not-on-gamstop/\'><img alt=\'NonGamStopBets Casinos not on GamStop\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/6c22601d-6a3f-4370-91dd-a9797887372a/nongamstopbets.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'UpGrow is the Best Instagram Growth Service in 2024. Get more real Instagram followers with our AI-powered growth engine to get 10x faster results. \' data-id=\'519002\' data-tier=\'1\' href=\'https://www.upgrow.com/\'><img alt=\'UpGrow is the Best Instagram Growth Service in 2024. Get more real Instagram followers with our AI-powered growth engine to get 10x faster results. \' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/63ab7268-5ce4-4e61-b9f1-93a1bd89cd3e/ms-icon-310x310.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Analysis of payment methods for use in the iGaming\' data-id=\'524205\' data-tier=\'1\' href=\'https://payidpokies.net/\'><img alt=\'Analysis of payment methods for use in the iGaming\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/75b4e83e-ae6a-4e65-b2aa-a67d7daec775/PayIDPokies-com.webp\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'30 Best Casinos Not on Gamstop in 2024\' data-id=\'525119\' data-tier=\'1\' href=\'https://finance.yahoo.com/news/30-best-casinos-not-gamstop-091943696.html\'><img alt=\'30 Best Casinos Not on Gamstop in 2024\' src=\'https://github.com/remy/nodemon/assets/13700/820935c0-7844-4ba9-9563-b1c559895c38\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'No deposit casino promo Codes 2024 - The best online Casinos websites. No deposit bonus codes, Free Spins and Promo Codes. Stake, Roobet, Jackpotcity and more.\' data-id=\'540890\' data-tier=\'1\' href=\'https://www.ownedcore.com/casino\'><img alt=\'No deposit casino promo Codes 2024 - The best online Casinos websites. No deposit bonus codes, Free Spins and Promo Codes. Stake, Roobet, Jackpotcity and more.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/8bd4b78c-95e2-4c41-b4f4-d7fd6c0e12cd/logo4-e6140c27.webp\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Online casino.\' data-id=\'541128\' data-tier=\'1\' href=\'https://www.fruityking.co.nz\'><img alt=\'Online casino.\' src=\'https://logo.clearbit.com/fruityking.co.nz\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Listing no deposit bonus offers from various internet sites .\' data-id=\'546391\' data-tier=\'1\' href=\'https://www.nodepositcasinobonus.org/\'><img alt=\'Listing no deposit bonus offers from various internet sites .\' src=\'https://logo.clearbit.com/nodepositcasinobonus.org\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Fortune Tiger\' data-id=\'551192\' data-tier=\'1\' href=\'https://fortune-tiger-br.com/\'><img alt=\'Fortune Tiger\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/88904f4a-f997-49e8-8fd4-5068acc85a98/fortune-tiger-slot-281-img-2.webp\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'SidesMedia\' data-id=\'558019\' data-tier=\'1\' href=\'https://sidesmedia.com\'><img alt=\'SidesMedia\' src=\'https://logo.clearbit.com/sidesmedia.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'BuitenlandseOnlineCasinos\' data-id=\'558683\' data-tier=\'1\' href=\'https://buitenlandseonlinecasinos.org/\'><img alt=\'BuitenlandseOnlineCasinos\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/1e5ae90b-7aee-4423-b62c-6e50e4c342a7/BUITENLANDSE-logo-edit1.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Find the social proof you need to reach your audience! Boost conversions. Quickly buy Twitter Followers &amp; more with no sign-up. Taking you to the next\' data-id=\'568449\' data-tier=\'1\' href=\'https://Bulkoid.com/buy-twitter-followers\'><img alt=\'Find the social proof you need to reach your audience! Boost conversions. Quickly buy Twitter Followers &amp; more with no sign-up. Taking you to the next\' src=\'https://logo.clearbit.com/Bulkoid.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Buy Instagram Followers, Likes, Views &amp; Comments\' data-id=\'572608\' data-tier=\'1\' href=\'https://viralyft.com/buy-instagram-followers\'><img alt=\'Buy Instagram Followers, Likes, Views &amp; Comments\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/981e622a-7d67-4117-86f1-f4b8abe64f13/Viralyft.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Insfollowpro sells Instagram followers, likes, views.\' data-id=\'575557\' data-tier=\'1\' href=\'https://insfollowpro.com\'><img alt=\'Insfollowpro sells Instagram followers, likes, views.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/062911ac-a004-4ac8-93eb-659f8e4c43e2/insfollowpro_Icon%20(1).png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Boost your social media presence effortlessly with top-quality Instagram and TikTok followers and likes.\' data-id=\'579911\' data-tier=\'1\' href=\'https://leofame.com/buy-instagram-followers\'><img alt=\'Boost your social media presence effortlessly with top-quality Instagram and TikTok followers and likes.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/186c0e19-b195-4228-901a-ab1b70d63ee5/WhatsApp%20Image%202024-06-21%20at%203.50.43%20AM.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Porównanie kasyn online w Polsce. Darmowe automaty online.\' data-id=\'581424\' data-tier=\'1\' href=\'https://onlinekasyno-polis.pl/\'><img alt=\'Porównanie kasyn online w Polsce. Darmowe automaty online.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/12fe53d4-b2e4-4601-b9ea-7b652c414a38/274px%20274px-2.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'https://buyyoutubviews.com\' data-id=\'582113\' data-tier=\'1\' href=\'https://buyyoutubviews.com\'><img alt=\'https://buyyoutubviews.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/aaf51ae0-8d0b-11ed-bc2f-739bd95ce647.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'casinorevisor.com\' data-id=\'582256\' data-tier=\'1\' href=\'https://casinorevisor.com/\'><img alt=\'casinorevisor.com\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/a69e1789-9f2f-4b24-8b85-c1d4fcecde2f/200x200_white_bg%201.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Social Media Management and all kinds of followers\' data-id=\'587050\' data-tier=\'1\' href=\'https://www.socialfollowers.uk/buy-tiktok-followers/\'><img alt=\'Social Media Management and all kinds of followers\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/8941f043-5d00-4e33-a1fd-f2d27ca54963/Social%20Followers%20Uk%20logo%20black.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Trusted last mile route planning and route optimization\' data-id=\'590147\' data-tier=\'1\' href=\'https://route4me.com/\'><img alt=\'Trusted last mile route planning and route optimization\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/237386c3-48a2-47c6-97ac-5f888cdb4cda/Route4MeIconLogo.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'FitclubFinder\' data-id=\'590352\' data-tier=\'1\' href=\'https://fitclubfinder.com/\'><img alt=\'FitclubFinder\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/2856deb0-16f1-4a2d-b4eb-2bb4cd7ff7eb/IMG_20240729_150124_050.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'CreditCaptain is the leading credit repair service that helps consumers quickly improve their credit scores, using AI for 10x better &amp; faster results.\' data-id=\'591015\' data-tier=\'1\' href=\'https://www.creditcaptain.com/\'><img alt=\'CreditCaptain is the leading credit repair service that helps consumers quickly improve their credit scores, using AI for 10x better &amp; faster results.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/ed3be807-6315-41d2-acc5-783a12b5ca72/app-icon-v2-1240x1240_min.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Buyreviewz is the best online review service providing - 100% real and non-drop google reviews for local business profiles.\' data-id=\'591192\' data-tier=\'1\' href=\'https://buyreviewz.com/buy-google-reviews\'><img alt=\'Buyreviewz is the best online review service providing - 100% real and non-drop google reviews for local business profiles.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/a2e27a87-18f4-40ab-9f98-aa52e72606ae/Buy%20Google%20Reviews.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'CasinosZonderCruksOnline\' data-id=\'591854\' data-tier=\'1\' href=\'https://casinoszondercruksonline.com/\'><img alt=\'CasinosZonderCruksOnline\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/f1676c14-148a-40ba-84f3-41b13c955c74/casinos-zonder-cruks-01-1.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Thunderclap.com is the best TikTok growth service provider, helping brands and creators build a targeted and engaged TikTok audience.\' data-id=\'593531\' data-tier=\'1\' href=\'https://thunderclap.com/\'><img alt=\'Thunderclap.com is the best TikTok growth service provider, helping brands and creators build a targeted and engaged TikTok audience.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/9106fce7-e440-4bbd-9af8-5c65fe25403d/Thunderclap.com.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Listing online sites with Inclave login.\' data-id=\'594587\' data-tier=\'1\' href=\'https://www.inclave.casino/\'><img alt=\'Listing online sites with Inclave login.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/8bb2d2f8-cd00-4fa0-8c12-7209e3a3ae34/inclave11.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Betwinner is an online bookmaker offering sports betting, casino games, and more.\' data-id=\'594768\' data-tier=\'1\' href=\'https://guidebook.betwinner.com/\'><img alt=\'Betwinner is an online bookmaker offering sports betting, casino games, and more.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/82cab29a-7002-4924-83bf-2eecb03d07c4/0x0.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'At Buzzoid, you can buy Instagram followers quickly, safely, and easily with just a few clicks. Rated world&apos;s #1 IG service since 2012.\' data-id=\'596376\' data-tier=\'1\' href=\'https://buzzoid.com/buy-instagram-followers/\'><img alt=\'At Buzzoid, you can buy Instagram followers quickly, safely, and easily with just a few clicks. Rated world&apos;s #1 IG service since 2012.\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/4ba9aeda-1eff-4ecf-84b7-b9c03bb1e017/Buzzoid.com%20-%20Buy%20Instagram%20Followers.png\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'Help users to find best and cheapest site to buy TikTok Followers\' data-id=\'598908\' data-tier=\'1\' href=\'https://www.reddit.com/r/TikTokExpert/comments/1f812o7/best_and_cheapest_site_to_buy_tiktok_followers/\'><img alt=\'Help users to find best and cheapest site to buy TikTok Followers\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/263abc3a-0841-4694-b24a-788460391613/communityIcon_66mltiw57b4d1.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'At Buzzoid, you can buy Instagram followers quickly, safely, and easily with just a few clicks. Rated world&apos;s #1 IG service since 2012.\' data-id=\'602382\' data-tier=\'1\' href=\'https://buzzoid.com/buy-instagram-followers/\'><img alt=\'At Buzzoid, you can buy Instagram followers quickly, safely, and easily with just a few clicks. Rated world&apos;s #1 IG service since 2012.\' src=\'https://logo.clearbit.com/buzzoid.com\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a>\n<a title=\'BonusBezDepozytu\' data-id=\'603579\' data-tier=\'1\' href=\'https://bonusbezdepozytu.org/\'><img alt=\'BonusBezDepozytu\' src=\'https://opencollective-production.s3.us-west-1.amazonaws.com/account-avatar/ce285388-bc43-41f5-b140-e39e78d44050/Bonus%20Bez%20Depozytu%20Logo.jpg\' style=\'object-fit: contain; float: left; margin:12px\' height=\'120\' width=\'120\'></a><!--oc-->\n</div>\n\nPlease note that links to the sponsors above are not direct endorsements nor affiliated with any of contributors of the nodemon project.\n\n# License\n\nMIT [http://rem.mit-license.org](http://rem.mit-license.org)\n',
+216 silly resolved     readmeFilename: 'README.md',
+216 silly resolved     _id: 'nodemon@3.1.7',
+216 silly resolved     dist: { shasum: '32d0c61d6580f7b8c010df651150ddbf7325336f' },
+216 silly resolved     _from: 'nodemon@',
+216 silly resolved     _resolved: 'https://registry.npmjs.org/nodemon/-/nodemon-3.1.7.tgz' } ]
+217 info install nodemon@3.1.7 into C:\Program Files\nodejs
+218 info installOne nodemon@3.1.7
+219 warn engine nodemon@3.1.7: wanted: {"node":">=10"} (current: {"node":"v0.9.12","npm":"1.2.12"})
+220 verbose from cache C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package\package.json
+221 info C:\Program Files\nodejs\node_modules\nodemon unbuild
+222 verbose read json C:\Program Files\nodejs\node_modules\nodemon\package.json
+223 verbose tar unpack C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+224 silly lockFile aaf29fd8-iles-nodejs-node-modules-nodemon C:\Program Files\nodejs\node_modules\nodemon
+225 verbose lock C:\Program Files\nodejs\node_modules\nodemon C:\Users\mishr\AppData\Roaming\npm-cache\aaf29fd8-iles-nodejs-node-modules-nodemon.lock
+226 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+227 verbose lock C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz C:\Users\mishr\AppData\Roaming\npm-cache\cf1b5c37--cache-nodemon-3-1-7-package-tgz.lock
+228 silly gunzTarPerm modes [ '755', '644' ]
+229 silly gunzTarPerm extractEntry package.json
+230 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+231 silly gunzTarPerm extractEntry README.md
+232 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+233 silly gunzTarPerm extractEntry LICENSE
+234 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+235 silly gunzTarPerm extractEntry .prettierrc.json
+236 silly gunzTarPerm modified mode [ '.prettierrc.json', 438, 420 ]
+237 silly gunzTarPerm extractEntry bin/nodemon.js
+238 silly gunzTarPerm modified mode [ 'bin/nodemon.js', 438, 420 ]
+239 silly gunzTarPerm extractEntry bin/windows-kill.exe
+240 silly gunzTarPerm modified mode [ 'bin/windows-kill.exe', 438, 420 ]
+241 silly gunzTarPerm extractEntry doc/cli/authors.txt
+242 silly gunzTarPerm modified mode [ 'doc/cli/authors.txt', 438, 420 ]
+243 silly gunzTarPerm extractEntry doc/cli/config.txt
+244 silly gunzTarPerm modified mode [ 'doc/cli/config.txt', 438, 420 ]
+245 silly gunzTarPerm extractEntry doc/cli/help.txt
+246 silly gunzTarPerm modified mode [ 'doc/cli/help.txt', 438, 420 ]
+247 silly gunzTarPerm extractEntry doc/cli/logo.txt
+248 silly gunzTarPerm modified mode [ 'doc/cli/logo.txt', 438, 420 ]
+249 silly gunzTarPerm extractEntry doc/cli/options.txt
+250 silly gunzTarPerm modified mode [ 'doc/cli/options.txt', 438, 420 ]
+251 silly gunzTarPerm extractEntry doc/cli/topics.txt
+252 silly gunzTarPerm modified mode [ 'doc/cli/topics.txt', 438, 420 ]
+253 silly gunzTarPerm extractEntry doc/cli/usage.txt
+254 silly gunzTarPerm modified mode [ 'doc/cli/usage.txt', 438, 420 ]
+255 silly gunzTarPerm extractEntry doc/cli/whoami.txt
+256 silly gunzTarPerm modified mode [ 'doc/cli/whoami.txt', 438, 420 ]
+257 silly gunzTarPerm extractEntry index.d.ts
+258 silly gunzTarPerm modified mode [ 'index.d.ts', 438, 420 ]
+259 silly gunzTarPerm extractEntry jsconfig.json
+260 silly gunzTarPerm modified mode [ 'jsconfig.json', 438, 420 ]
+261 silly gunzTarPerm extractEntry lib/index.js
+262 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+263 silly gunzTarPerm extractEntry lib/nodemon.js
+264 silly gunzTarPerm modified mode [ 'lib/nodemon.js', 438, 420 ]
+265 silly gunzTarPerm extractEntry lib/spawn.js
+266 silly gunzTarPerm modified mode [ 'lib/spawn.js', 438, 420 ]
+267 silly gunzTarPerm extractEntry lib/version.js
+268 silly gunzTarPerm modified mode [ 'lib/version.js', 438, 420 ]
+269 silly gunzTarPerm extractEntry lib/cli/index.js
+270 silly gunzTarPerm modified mode [ 'lib/cli/index.js', 438, 420 ]
+271 silly gunzTarPerm extractEntry lib/cli/parse.js
+272 silly gunzTarPerm modified mode [ 'lib/cli/parse.js', 438, 420 ]
+273 silly gunzTarPerm extractEntry lib/config/command.js
+274 silly gunzTarPerm modified mode [ 'lib/config/command.js', 438, 420 ]
+275 silly gunzTarPerm extractEntry lib/config/defaults.js
+276 silly gunzTarPerm modified mode [ 'lib/config/defaults.js', 438, 420 ]
+277 silly gunzTarPerm extractEntry lib/config/exec.js
+278 silly gunzTarPerm modified mode [ 'lib/config/exec.js', 438, 420 ]
+279 silly gunzTarPerm extractEntry lib/config/index.js
+280 silly gunzTarPerm modified mode [ 'lib/config/index.js', 438, 420 ]
+281 silly gunzTarPerm extractEntry lib/config/load.js
+282 silly gunzTarPerm modified mode [ 'lib/config/load.js', 438, 420 ]
+283 silly gunzTarPerm extractEntry lib/help/index.js
+284 silly gunzTarPerm modified mode [ 'lib/help/index.js', 438, 420 ]
+285 silly gunzTarPerm extractEntry lib/monitor/index.js
+286 silly gunzTarPerm modified mode [ 'lib/monitor/index.js', 438, 420 ]
+287 silly gunzTarPerm extractEntry lib/monitor/match.js
+288 silly gunzTarPerm modified mode [ 'lib/monitor/match.js', 438, 420 ]
+289 silly gunzTarPerm extractEntry lib/monitor/run.js
+290 silly gunzTarPerm modified mode [ 'lib/monitor/run.js', 438, 420 ]
+291 silly gunzTarPerm extractEntry lib/monitor/signals.js
+292 silly gunzTarPerm modified mode [ 'lib/monitor/signals.js', 438, 420 ]
+293 silly gunzTarPerm extractEntry lib/monitor/watch.js
+294 silly gunzTarPerm modified mode [ 'lib/monitor/watch.js', 438, 420 ]
+295 silly gunzTarPerm extractEntry lib/rules/add.js
+296 silly gunzTarPerm modified mode [ 'lib/rules/add.js', 438, 420 ]
+297 silly gunzTarPerm extractEntry lib/rules/index.js
+298 silly gunzTarPerm modified mode [ 'lib/rules/index.js', 438, 420 ]
+299 silly gunzTarPerm extractEntry lib/rules/parse.js
+300 silly gunzTarPerm modified mode [ 'lib/rules/parse.js', 438, 420 ]
+301 silly gunzTarPerm extractEntry lib/utils/bus.js
+302 silly gunzTarPerm modified mode [ 'lib/utils/bus.js', 438, 420 ]
+303 silly gunzTarPerm extractEntry lib/utils/clone.js
+304 silly gunzTarPerm modified mode [ 'lib/utils/clone.js', 438, 420 ]
+305 silly gunzTarPerm extractEntry lib/utils/colour.js
+306 silly gunzTarPerm modified mode [ 'lib/utils/colour.js', 438, 420 ]
+307 silly gunzTarPerm extractEntry lib/utils/index.js
+308 silly gunzTarPerm modified mode [ 'lib/utils/index.js', 438, 420 ]
+309 silly gunzTarPerm extractEntry lib/utils/log.js
+310 silly gunzTarPerm modified mode [ 'lib/utils/log.js', 438, 420 ]
+311 silly gunzTarPerm extractEntry lib/utils/merge.js
+312 silly gunzTarPerm modified mode [ 'lib/utils/merge.js', 438, 420 ]
+313 verbose read json C:\Program Files\nodejs\node_modules\nodemon\package.json
+314 silly lockFile aaf29fd8-iles-nodejs-node-modules-nodemon C:\Program Files\nodejs\node_modules\nodemon
+315 silly lockFile aaf29fd8-iles-nodejs-node-modules-nodemon C:\Program Files\nodejs\node_modules\nodemon
+316 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+317 silly lockFile cf1b5c37--cache-nodemon-3-1-7-package-tgz C:\Users\mishr\AppData\Roaming\npm-cache\nodemon\3.1.7\package.tgz
+318 info preinstall nodemon@3.1.7
+319 verbose from cache C:\Program Files\nodejs\node_modules\nodemon\package.json
+320 verbose readDependencies using package.json deps
+321 verbose from cache C:\Program Files\nodejs\node_modules\nodemon\package.json
+322 verbose readDependencies using package.json deps
+323 verbose cache add [ 'minimatch@^3.1.2', null ]
+324 verbose cache add name=undefined spec="minimatch@^3.1.2" args=["minimatch@^3.1.2",null]
+325 verbose parsed url { protocol: null,
+325 verbose parsed url   slashes: null,
+325 verbose parsed url   auth: null,
+325 verbose parsed url   host: null,
+325 verbose parsed url   port: null,
+325 verbose parsed url   hostname: null,
+325 verbose parsed url   hash: null,
+325 verbose parsed url   search: null,
+325 verbose parsed url   query: null,
+325 verbose parsed url   pathname: 'minimatch@^3.1.2',
+325 verbose parsed url   path: 'minimatch@^3.1.2',
+325 verbose parsed url   href: 'minimatch@^3.1.2' }
+326 verbose cache add name="minimatch" spec="^3.1.2" args=["minimatch","^3.1.2"]
+327 verbose parsed url { protocol: null,
+327 verbose parsed url   slashes: null,
+327 verbose parsed url   auth: null,
+327 verbose parsed url   host: null,
+327 verbose parsed url   port: null,
+327 verbose parsed url   hostname: null,
+327 verbose parsed url   hash: null,
+327 verbose parsed url   search: null,
+327 verbose parsed url   query: null,
+327 verbose parsed url   pathname: '^3.1.2',
+327 verbose parsed url   path: '^3.1.2',
+327 verbose parsed url   href: '^3.1.2' }
+328 verbose addNamed [ 'minimatch', '^3.1.2' ]
+329 verbose addNamed [ null, null ]
+330 silly lockFile 789e406a-minimatch-3-1-2 minimatch@^3.1.2
+331 verbose lock minimatch@^3.1.2 C:\Users\mishr\AppData\Roaming\npm-cache\789e406a-minimatch-3-1-2.lock
+332 verbose cache add [ 'pstree.remy@^1.1.8', null ]
+333 verbose cache add name=undefined spec="pstree.remy@^1.1.8" args=["pstree.remy@^1.1.8",null]
+334 verbose parsed url { protocol: null,
+334 verbose parsed url   slashes: null,
+334 verbose parsed url   auth: null,
+334 verbose parsed url   host: null,
+334 verbose parsed url   port: null,
+334 verbose parsed url   hostname: null,
+334 verbose parsed url   hash: null,
+334 verbose parsed url   search: null,
+334 verbose parsed url   query: null,
+334 verbose parsed url   pathname: 'pstree.remy@^1.1.8',
+334 verbose parsed url   path: 'pstree.remy@^1.1.8',
+334 verbose parsed url   href: 'pstree.remy@^1.1.8' }
+335 verbose cache add name="pstree.remy" spec="^1.1.8" args=["pstree.remy","^1.1.8"]
+336 verbose parsed url { protocol: null,
+336 verbose parsed url   slashes: null,
+336 verbose parsed url   auth: null,
+336 verbose parsed url   host: null,
+336 verbose parsed url   port: null,
+336 verbose parsed url   hostname: null,
+336 verbose parsed url   hash: null,
+336 verbose parsed url   search: null,
+336 verbose parsed url   query: null,
+336 verbose parsed url   pathname: '^1.1.8',
+336 verbose parsed url   path: '^1.1.8',
+336 verbose parsed url   href: '^1.1.8' }
+337 verbose addNamed [ 'pstree.remy', '^1.1.8' ]
+338 verbose addNamed [ null, null ]
+339 silly lockFile b37114fe-pstree-remy-1-1-8 pstree.remy@^1.1.8
+340 verbose lock pstree.remy@^1.1.8 C:\Users\mishr\AppData\Roaming\npm-cache\b37114fe-pstree-remy-1-1-8.lock
+341 verbose cache add [ 'semver@^7.5.3', null ]
+342 verbose cache add name=undefined spec="semver@^7.5.3" args=["semver@^7.5.3",null]
+343 verbose parsed url { protocol: null,
+343 verbose parsed url   slashes: null,
+343 verbose parsed url   auth: null,
+343 verbose parsed url   host: null,
+343 verbose parsed url   port: null,
+343 verbose parsed url   hostname: null,
+343 verbose parsed url   hash: null,
+343 verbose parsed url   search: null,
+343 verbose parsed url   query: null,
+343 verbose parsed url   pathname: 'semver@^7.5.3',
+343 verbose parsed url   path: 'semver@^7.5.3',
+343 verbose parsed url   href: 'semver@^7.5.3' }
+344 verbose cache add name="semver" spec="^7.5.3" args=["semver","^7.5.3"]
+345 verbose parsed url { protocol: null,
+345 verbose parsed url   slashes: null,
+345 verbose parsed url   auth: null,
+345 verbose parsed url   host: null,
+345 verbose parsed url   port: null,
+345 verbose parsed url   hostname: null,
+345 verbose parsed url   hash: null,
+345 verbose parsed url   search: null,
+345 verbose parsed url   query: null,
+345 verbose parsed url   pathname: '^7.5.3',
+345 verbose parsed url   path: '^7.5.3',
+345 verbose parsed url   href: '^7.5.3' }
+346 verbose addNamed [ 'semver', '^7.5.3' ]
+347 verbose addNamed [ null, null ]
+348 silly lockFile 4a24bb55-semver-7-5-3 semver@^7.5.3
+349 verbose lock semver@^7.5.3 C:\Users\mishr\AppData\Roaming\npm-cache\4a24bb55-semver-7-5-3.lock
+350 verbose cache add [ 'simple-update-notifier@^2.0.0', null ]
+351 verbose cache add name=undefined spec="simple-update-notifier@^2.0.0" args=["simple-update-notifier@^2.0.0",null]
+352 verbose parsed url { protocol: null,
+352 verbose parsed url   slashes: null,
+352 verbose parsed url   auth: null,
+352 verbose parsed url   host: null,
+352 verbose parsed url   port: null,
+352 verbose parsed url   hostname: null,
+352 verbose parsed url   hash: null,
+352 verbose parsed url   search: null,
+352 verbose parsed url   query: null,
+352 verbose parsed url   pathname: 'simple-update-notifier@^2.0.0',
+352 verbose parsed url   path: 'simple-update-notifier@^2.0.0',
+352 verbose parsed url   href: 'simple-update-notifier@^2.0.0' }
+353 verbose cache add name="simple-update-notifier" spec="^2.0.0" args=["simple-update-notifier","^2.0.0"]
+354 verbose parsed url { protocol: null,
+354 verbose parsed url   slashes: null,
+354 verbose parsed url   auth: null,
+354 verbose parsed url   host: null,
+354 verbose parsed url   port: null,
+354 verbose parsed url   hostname: null,
+354 verbose parsed url   hash: null,
+354 verbose parsed url   search: null,
+354 verbose parsed url   query: null,
+354 verbose parsed url   pathname: '^2.0.0',
+354 verbose parsed url   path: '^2.0.0',
+354 verbose parsed url   href: '^2.0.0' }
+355 verbose addNamed [ 'simple-update-notifier', '^2.0.0' ]
+356 verbose addNamed [ null, null ]
+357 silly lockFile 2d9c1007-simple-update-notifier-2-0-0 simple-update-notifier@^2.0.0
+358 verbose lock simple-update-notifier@^2.0.0 C:\Users\mishr\AppData\Roaming\npm-cache\2d9c1007-simple-update-notifier-2-0-0.lock
+359 verbose cache add [ 'supports-color@^5.5.0', null ]
+360 verbose cache add name=undefined spec="supports-color@^5.5.0" args=["supports-color@^5.5.0",null]
+361 verbose parsed url { protocol: null,
+361 verbose parsed url   slashes: null,
+361 verbose parsed url   auth: null,
+361 verbose parsed url   host: null,
+361 verbose parsed url   port: null,
+361 verbose parsed url   hostname: null,
+361 verbose parsed url   hash: null,
+361 verbose parsed url   search: null,
+361 verbose parsed url   query: null,
+361 verbose parsed url   pathname: 'supports-color@^5.5.0',
+361 verbose parsed url   path: 'supports-color@^5.5.0',
+361 verbose parsed url   href: 'supports-color@^5.5.0' }
+362 verbose cache add name="supports-color" spec="^5.5.0" args=["supports-color","^5.5.0"]
+363 verbose parsed url { protocol: null,
+363 verbose parsed url   slashes: null,
+363 verbose parsed url   auth: null,
+363 verbose parsed url   host: null,
+363 verbose parsed url   port: null,
+363 verbose parsed url   hostname: null,
+363 verbose parsed url   hash: null,
+363 verbose parsed url   search: null,
+363 verbose parsed url   query: null,
+363 verbose parsed url   pathname: '^5.5.0',
+363 verbose parsed url   path: '^5.5.0',
+363 verbose parsed url   href: '^5.5.0' }
+364 verbose addNamed [ 'supports-color', '^5.5.0' ]
+365 verbose addNamed [ null, null ]
+366 silly lockFile 4e2cc364-supports-color-5-5-0 supports-color@^5.5.0
+367 verbose lock supports-color@^5.5.0 C:\Users\mishr\AppData\Roaming\npm-cache\4e2cc364-supports-color-5-5-0.lock
+368 verbose cache add [ 'touch@^3.1.0', null ]
+369 verbose cache add name=undefined spec="touch@^3.1.0" args=["touch@^3.1.0",null]
+370 verbose parsed url { protocol: null,
+370 verbose parsed url   slashes: null,
+370 verbose parsed url   auth: null,
+370 verbose parsed url   host: null,
+370 verbose parsed url   port: null,
+370 verbose parsed url   hostname: null,
+370 verbose parsed url   hash: null,
+370 verbose parsed url   search: null,
+370 verbose parsed url   query: null,
+370 verbose parsed url   pathname: 'touch@^3.1.0',
+370 verbose parsed url   path: 'touch@^3.1.0',
+370 verbose parsed url   href: 'touch@^3.1.0' }
+371 verbose cache add name="touch" spec="^3.1.0" args=["touch","^3.1.0"]
+372 verbose parsed url { protocol: null,
+372 verbose parsed url   slashes: null,
+372 verbose parsed url   auth: null,
+372 verbose parsed url   host: null,
+372 verbose parsed url   port: null,
+372 verbose parsed url   hostname: null,
+372 verbose parsed url   hash: null,
+372 verbose parsed url   search: null,
+372 verbose parsed url   query: null,
+372 verbose parsed url   pathname: '^3.1.0',
+372 verbose parsed url   path: '^3.1.0',
+372 verbose parsed url   href: '^3.1.0' }
+373 verbose addNamed [ 'touch', '^3.1.0' ]
+374 verbose addNamed [ null, null ]
+375 silly lockFile caa93724-touch-3-1-0 touch@^3.1.0
+376 verbose lock touch@^3.1.0 C:\Users\mishr\AppData\Roaming\npm-cache\caa93724-touch-3-1-0.lock
+377 verbose cache add [ 'undefsafe@^2.0.5', null ]
+378 verbose cache add name=undefined spec="undefsafe@^2.0.5" args=["undefsafe@^2.0.5",null]
+379 verbose parsed url { protocol: null,
+379 verbose parsed url   slashes: null,
+379 verbose parsed url   auth: null,
+379 verbose parsed url   host: null,
+379 verbose parsed url   port: null,
+379 verbose parsed url   hostname: null,
+379 verbose parsed url   hash: null,
+379 verbose parsed url   search: null,
+379 verbose parsed url   query: null,
+379 verbose parsed url   pathname: 'undefsafe@^2.0.5',
+379 verbose parsed url   path: 'undefsafe@^2.0.5',
+379 verbose parsed url   href: 'undefsafe@^2.0.5' }
+380 verbose cache add name="undefsafe" spec="^2.0.5" args=["undefsafe","^2.0.5"]
+381 verbose parsed url { protocol: null,
+381 verbose parsed url   slashes: null,
+381 verbose parsed url   auth: null,
+381 verbose parsed url   host: null,
+381 verbose parsed url   port: null,
+381 verbose parsed url   hostname: null,
+381 verbose parsed url   hash: null,
+381 verbose parsed url   search: null,
+381 verbose parsed url   query: null,
+381 verbose parsed url   pathname: '^2.0.5',
+381 verbose parsed url   path: '^2.0.5',
+381 verbose parsed url   href: '^2.0.5' }
+382 verbose addNamed [ 'undefsafe', '^2.0.5' ]
+383 verbose addNamed [ null, null ]
+384 silly lockFile 0705d316-undefsafe-2-0-5 undefsafe@^2.0.5
+385 verbose lock undefsafe@^2.0.5 C:\Users\mishr\AppData\Roaming\npm-cache\0705d316-undefsafe-2-0-5.lock
+386 verbose cache add [ 'chokidar@^3.5.2', null ]
+387 verbose cache add name=undefined spec="chokidar@^3.5.2" args=["chokidar@^3.5.2",null]
+388 verbose parsed url { protocol: null,
+388 verbose parsed url   slashes: null,
+388 verbose parsed url   auth: null,
+388 verbose parsed url   host: null,
+388 verbose parsed url   port: null,
+388 verbose parsed url   hostname: null,
+388 verbose parsed url   hash: null,
+388 verbose parsed url   search: null,
+388 verbose parsed url   query: null,
+388 verbose parsed url   pathname: 'chokidar@^3.5.2',
+388 verbose parsed url   path: 'chokidar@^3.5.2',
+388 verbose parsed url   href: 'chokidar@^3.5.2' }
+389 verbose cache add name="chokidar" spec="^3.5.2" args=["chokidar","^3.5.2"]
+390 verbose parsed url { protocol: null,
+390 verbose parsed url   slashes: null,
+390 verbose parsed url   auth: null,
+390 verbose parsed url   host: null,
+390 verbose parsed url   port: null,
+390 verbose parsed url   hostname: null,
+390 verbose parsed url   hash: null,
+390 verbose parsed url   search: null,
+390 verbose parsed url   query: null,
+390 verbose parsed url   pathname: '^3.5.2',
+390 verbose parsed url   path: '^3.5.2',
+390 verbose parsed url   href: '^3.5.2' }
+391 verbose addNamed [ 'chokidar', '^3.5.2' ]
+392 verbose addNamed [ null, null ]
+393 silly lockFile 27b6d617-chokidar-3-5-2 chokidar@^3.5.2
+394 verbose lock chokidar@^3.5.2 C:\Users\mishr\AppData\Roaming\npm-cache\27b6d617-chokidar-3-5-2.lock
+395 verbose cache add [ 'debug@^4', null ]
+396 verbose cache add name=undefined spec="debug@^4" args=["debug@^4",null]
+397 verbose parsed url { protocol: null,
+397 verbose parsed url   slashes: null,
+397 verbose parsed url   auth: null,
+397 verbose parsed url   host: null,
+397 verbose parsed url   port: null,
+397 verbose parsed url   hostname: null,
+397 verbose parsed url   hash: null,
+397 verbose parsed url   search: null,
+397 verbose parsed url   query: null,
+397 verbose parsed url   pathname: 'debug@^4',
+397 verbose parsed url   path: 'debug@^4',
+397 verbose parsed url   href: 'debug@^4' }
+398 verbose cache add name="debug" spec="^4" args=["debug","^4"]
+399 verbose parsed url { protocol: null,
+399 verbose parsed url   slashes: null,
+399 verbose parsed url   auth: null,
+399 verbose parsed url   host: null,
+399 verbose parsed url   port: null,
+399 verbose parsed url   hostname: null,
+399 verbose parsed url   hash: null,
+399 verbose parsed url   search: null,
+399 verbose parsed url   query: null,
+399 verbose parsed url   pathname: '^4',
+399 verbose parsed url   path: '^4',
+399 verbose parsed url   href: '^4' }
+400 verbose addNamed [ 'debug', '^4' ]
+401 verbose addNamed [ null, null ]
+402 silly lockFile f79e5f23-debug-4 debug@^4
+403 verbose lock debug@^4 C:\Users\mishr\AppData\Roaming\npm-cache\f79e5f23-debug-4.lock
+404 verbose cache add [ 'ignore-by-default@^1.0.1', null ]
+405 verbose cache add name=undefined spec="ignore-by-default@^1.0.1" args=["ignore-by-default@^1.0.1",null]
+406 verbose parsed url { protocol: null,
+406 verbose parsed url   slashes: null,
+406 verbose parsed url   auth: null,
+406 verbose parsed url   host: null,
+406 verbose parsed url   port: null,
+406 verbose parsed url   hostname: null,
+406 verbose parsed url   hash: null,
+406 verbose parsed url   search: null,
+406 verbose parsed url   query: null,
+406 verbose parsed url   pathname: 'ignore-by-default@^1.0.1',
+406 verbose parsed url   path: 'ignore-by-default@^1.0.1',
+406 verbose parsed url   href: 'ignore-by-default@^1.0.1' }
+407 verbose cache add name="ignore-by-default" spec="^1.0.1" args=["ignore-by-default","^1.0.1"]
+408 verbose parsed url { protocol: null,
+408 verbose parsed url   slashes: null,
+408 verbose parsed url   auth: null,
+408 verbose parsed url   host: null,
+408 verbose parsed url   port: null,
+408 verbose parsed url   hostname: null,
+408 verbose parsed url   hash: null,
+408 verbose parsed url   search: null,
+408 verbose parsed url   query: null,
+408 verbose parsed url   pathname: '^1.0.1',
+408 verbose parsed url   path: '^1.0.1',
+408 verbose parsed url   href: '^1.0.1' }
+409 verbose addNamed [ 'ignore-by-default', '^1.0.1' ]
+410 verbose addNamed [ null, null ]
+411 silly lockFile 2835a20a-ignore-by-default-1-0-1 ignore-by-default@^1.0.1
+412 verbose lock ignore-by-default@^1.0.1 C:\Users\mishr\AppData\Roaming\npm-cache\2835a20a-ignore-by-default-1-0-1.lock
+413 info addNameTag [ 'minimatch', '^3.1.2' ]
+414 info addNameTag [ 'pstree.remy', '^1.1.8' ]
+415 info addNameTag [ 'semver', '^7.5.3' ]
+416 info addNameTag [ 'simple-update-notifier', '^2.0.0' ]
+417 info addNameTag [ 'supports-color', '^5.5.0' ]
+418 info addNameTag [ 'touch', '^3.1.0' ]
+419 info addNameTag [ 'undefsafe', '^2.0.5' ]
+420 info addNameTag [ 'chokidar', '^3.5.2' ]
+421 info addNameTag [ 'debug', '^4' ]
+422 info addNameTag [ 'ignore-by-default', '^1.0.1' ]
+423 verbose url raw minimatch
+424 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+425 verbose url resolved https://registry.npmjs.org/minimatch
+426 info trying registry request attempt 1 at 22:54:35
+427 http GET https://registry.npmjs.org/minimatch
+428 verbose url raw pstree.remy
+429 verbose url resolving [ 'https://registry.npmjs.org/', './pstree.remy' ]
+430 verbose url resolved https://registry.npmjs.org/pstree.remy
+431 info trying registry request attempt 1 at 22:54:35
+432 http GET https://registry.npmjs.org/pstree.remy
+433 verbose url raw semver
+434 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+435 verbose url resolved https://registry.npmjs.org/semver
+436 info trying registry request attempt 1 at 22:54:35
+437 http GET https://registry.npmjs.org/semver
+438 verbose url raw simple-update-notifier
+439 verbose url resolving [ 'https://registry.npmjs.org/', './simple-update-notifier' ]
+440 verbose url resolved https://registry.npmjs.org/simple-update-notifier
+441 info trying registry request attempt 1 at 22:54:35
+442 http GET https://registry.npmjs.org/simple-update-notifier
+443 verbose url raw supports-color
+444 verbose url resolving [ 'https://registry.npmjs.org/', './supports-color' ]
+445 verbose url resolved https://registry.npmjs.org/supports-color
+446 info trying registry request attempt 1 at 22:54:35
+447 http GET https://registry.npmjs.org/supports-color
+448 verbose url raw touch
+449 verbose url resolving [ 'https://registry.npmjs.org/', './touch' ]
+450 verbose url resolved https://registry.npmjs.org/touch
+451 info trying registry request attempt 1 at 22:54:35
+452 http GET https://registry.npmjs.org/touch
+453 verbose url raw undefsafe
+454 verbose url resolving [ 'https://registry.npmjs.org/', './undefsafe' ]
+455 verbose url resolved https://registry.npmjs.org/undefsafe
+456 info trying registry request attempt 1 at 22:54:35
+457 http GET https://registry.npmjs.org/undefsafe
+458 verbose url raw chokidar
+459 verbose url resolving [ 'https://registry.npmjs.org/', './chokidar' ]
+460 verbose url resolved https://registry.npmjs.org/chokidar
+461 info trying registry request attempt 1 at 22:54:35
+462 http GET https://registry.npmjs.org/chokidar
+463 verbose url raw debug
+464 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+465 verbose url resolved https://registry.npmjs.org/debug
+466 info trying registry request attempt 1 at 22:54:35
+467 http GET https://registry.npmjs.org/debug
+468 verbose url raw ignore-by-default
+469 verbose url resolving [ 'https://registry.npmjs.org/', './ignore-by-default' ]
+470 verbose url resolved https://registry.npmjs.org/ignore-by-default
+471 info trying registry request attempt 1 at 22:54:35
+472 http GET https://registry.npmjs.org/ignore-by-default
+473 http 200 https://registry.npmjs.org/supports-color
+474 silly registry.get cb [ 200,
+474 silly registry.get   { date: 'Sun, 24 Nov 2024 17:24:36 GMT',
+474 silly registry.get     'content-type': 'application/json',
+474 silly registry.get     'content-length': '113904',
+474 silly registry.get     connection: 'keep-alive',
+474 silly registry.get     'cf-ray': '8e7b17eefbcc33ba-DEL',
+474 silly registry.get     'cf-cache-status': 'HIT',
+474 silly registry.get     'accept-ranges': 'bytes',
+474 silly registry.get     'access-control-allow-origin': '*',
+474 silly registry.get     age: '253',
+474 silly registry.get     'cache-control': 'public, max-age=300',
+474 silly registry.get     etag: '"4cf4dc55e204a634f07721f7abe83d80"',
+474 silly registry.get     'last-modified': 'Wed, 28 Jun 2023 13:52:13 GMT',
+474 silly registry.get     vary: 'accept-encoding, accept',
+474 silly registry.get     server: 'cloudflare' } ]
+475 silly lockFile 4e2cc364-supports-color-5-5-0 supports-color@^5.5.0
+476 silly lockFile 4e2cc364-supports-color-5-5-0 supports-color@^5.5.0
+477 verbose about to build C:\Program Files\nodejs\node_modules\nodemon
+478 info C:\Program Files\nodejs\node_modules\nodemon unbuild
+479 verbose from cache C:\Program Files\nodejs\node_modules\nodemon\package.json
+480 info preuninstall nodemon@3.1.7
+481 info uninstall nodemon@3.1.7
+482 verbose true,C:\Program Files\nodejs\node_modules,C:\Program Files\nodejs\node_modules unbuild nodemon@3.1.7
+483 verbose C:\Program Files\nodejs,[object Object] binRoot
+484 info postuninstall nodemon@3.1.7
+485 http 200 https://registry.npmjs.org/simple-update-notifier
+486 silly registry.get cb [ 200,
+486 silly registry.get   { date: 'Sun, 24 Nov 2024 17:24:36 GMT',
+486 silly registry.get     'content-type': 'application/json',
+486 silly registry.get     'content-length': '44879',
+486 silly registry.get     connection: 'keep-alive',
+486 silly registry.get     'cf-ray': '8e7b17ef8b25f41d-BOM',
+486 silly registry.get     'cf-cache-status': 'HIT',
+486 silly registry.get     'accept-ranges': 'bytes',
+486 silly registry.get     'access-control-allow-origin': '*',
+486 silly registry.get     age: '263',
+486 silly registry.get     'cache-control': 'public, max-age=300',
+486 silly registry.get     etag: '"6291b1c8b24de31ae9f6a81fa0aabf85"',
+486 silly registry.get     'last-modified': 'Sun, 10 Sep 2023 18:41:42 GMT',
+486 silly registry.get     vary: 'accept-encoding, accept',
+486 silly registry.get     server: 'cloudflare' } ]
+487 error Error: No compatible version found: supports-color@'^5.5.0'
+487 error Valid install targets:
+487 error ["0.2.0","1.0.0","1.1.0","1.2.0","1.2.1","1.3.0","1.3.1","2.0.0","3.0.0","3.0.1","3.1.0","3.1.1","3.1.2","3.2.0","3.2.1","3.2.2","3.2.3","4.0.0","4.1.0","4.2.0","4.2.1","4.3.0","4.4.0","4.5.0","5.0.0","5.0.1","5.1.0","5.2.0","5.3.0","5.4.0","5.5.0","6.0.0","6.1.0","7.0.0","7.1.0","7.2.0","8.0.0","8.1.0","8.1.1","9.0.0","9.0.1","9.0.2","9.1.0","9.2.0","9.2.1","9.2.2","9.2.3","9.3.0","9.3.1","9.4.0"]
+487 error     at installTargetsError (C:\Users\mishr\AppData\Roaming\nvm\v0.9.12\node_modules\npm\lib\cache.js:679:10)
+487 error     at C:\Users\mishr\AppData\Roaming\nvm\v0.9.12\node_modules\npm\lib\cache.js:594:10
+487 error     at saved (C:\Users\mishr\AppData\Roaming\nvm\v0.9.12\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+487 error     at Object.oncomplete (fs.js:93:15)
+488 error If you need help, you may report this log at:
+488 error     <http://github.com/isaacs/npm/issues>
+488 error or email it to:
+488 error     <npm-@googlegroups.com>
+489 error System Windows_NT 6.2.9200
+490 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "nodemon"
+491 error cwd C:\web-devlopement\major_project
+492 error node -v v0.9.12
+493 error npm -v 1.2.12
+494 verbose exit [ 1, true ]
