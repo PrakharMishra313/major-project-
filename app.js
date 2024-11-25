@@ -8,9 +8,7 @@ const ejsMate = require("ejs-mate");
 const wrapAsync = require("../major_project/utils/wrapAsync.js");
 const expressError = require("../major_project/utils/expressError.js");
 const { listingSchema } = require("./schema.js");
-
-// Fix 1: Ensure navbar.ejs path exists
-console.log('Resolved Path:', path.join(__dirname, 'views/includes/navbar.ejs'));
+const Review = require("./models/review.js");
 
 mongoose.set("strictQuery", true);
 
@@ -90,6 +88,20 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
   const deletedListing = await Listing.findByIdAndDelete(id);
   res.redirect("/listings");
 }));
+
+// Reviews
+//post route
+app.post("/listings/:id/reviews", async (req, res) => {
+  const listing = await Listing.findById(req.params.id);
+  const newReview = new Review(req.body.review);
+
+  listing.reviews.push(newReview);
+  await newReview.save();
+  await listing.save();
+
+  res.redirect(`/listings/${listing._id}`);
+});
+
 
 app.get("/seed", wrapAsync(async (req, res) => {
   try {
