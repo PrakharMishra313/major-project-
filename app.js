@@ -7,7 +7,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("../major_project/utils/wrapAsync.js");
 const expressError = require("../major_project/utils/expressError.js");
-const { listingSchema } = require("./schema.js");
+const { listingSchema,reviewSchema } = require("./schema.js");
 const Review = require("./models/review.js");
 
 mongoose.set("strictQuery", true);
@@ -49,6 +49,16 @@ const validateListings = (req, res, next) => {
   }
 };
 
+const validateReview = (req, res, next) => {
+  const { error } = reviewSchema.validate(req.body);
+  if (error) {
+    const errMsg = error.details.map((el) => el.message).join(",");
+    throw new expressError(404, errMsg);
+  } else {
+    next();
+  }
+};
+
 // Routes
 app.get("/listings", wrapAsync(async (req, res) => {
   const allListings = await Listing.find({});
@@ -61,7 +71,7 @@ app.get("/listings/new", (req, res) => {
 
 app.get("/listings/:id", wrapAsync(async (req, res) => {
   const { id } = req.params;
-  const listing = await Listing.findById(id);
+  const listing = await Listing.findById(id).populate("reviews");
   res.render("listings/show", { listing });
 }));
 
@@ -92,16 +102,30 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 // Reviews
 //post route
 app.post("/listings/:id/reviews", async (req, res) => {
-  const listing = await Listing.findById(req.params.id);
+  console.log(req.body); // Debugging the received request body
+  const { id } = req.params;
+  const listing = await Listing.findById(id);
   const newReview = new Review(req.body.review);
 
   listing.reviews.push(newReview);
   await newReview.save();
   await listing.save();
 
-  res.redirect(`/listings/${listing._id}`);
+  res.redirect(`/listings/${id}`);
 });
 
+app.delete("/listings/:id/reviews/:reviewId", wrapAsync(async (req, res) => {
+  const { id, reviewId } = req.params; // Ensure parameter names match the route
+
+  // Remove the review reference from the listing
+  await Listing.findByIdAndUpdate(id, { $pull: { reviews: reviewId } });
+
+  // Delete the review document from the database
+  await Review.findByIdAndDelete(reviewId);
+
+  // Redirect back to the listing's page
+  res.redirect(`/listings/${id}`);
+}));
 
 app.get("/seed", wrapAsync(async (req, res) => {
   try {
