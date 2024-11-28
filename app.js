@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const router = express.Router({mergeParams:true});
 const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
@@ -7,8 +8,9 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("../major_project/utils/wrapAsync.js");
 const expressError = require("../major_project/utils/expressError.js");
-const { listingSchema,reviewSchema } = require("./schema.js");
-const Review = require("./models/review.js");
+
+const listings = require("./routes/listing.js");
+const reviews = require("./routes/review.js");
 
 mongoose.set("strictQuery", true);
 
@@ -33,21 +35,11 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));
+
 // Test root route
 app.get("/", (req, res) => {
   res.send("Hi, I am root");
 });
-
-// Fix 2: Correct validateListings middleware (error.details, not error.detials)
-const validateListings = (req, res, next) => {
-  const { error } = listingSchema.validate(req.body);
-  if (error) {
-    const errMsg = error.details.map((el) => el.message).join(",");
-    throw new expressError(404, errMsg);
-  } else {
-    next();
-  }
-};
 
 const validateReview = (req, res, next) => {
   const { error } = reviewSchema.validate(req.body);
@@ -59,73 +51,8 @@ const validateReview = (req, res, next) => {
   }
 };
 
-// Routes
-app.get("/listings", wrapAsync(async (req, res) => {
-  const allListings = await Listing.find({});
-  res.render("listings/index", { allListings });
-}));
-
-app.get("/listings/new", (req, res) => {
-  res.render("listings/new");
-});
-
-app.get("/listings/:id", wrapAsync(async (req, res) => {
-  const { id } = req.params;
-  const listing = await Listing.findById(id).populate("reviews");
-  res.render("listings/show", { listing });
-}));
-
-app.post("/listings", validateListings, wrapAsync(async (req, res) => {
-  const newListing = new Listing(req.body.listing);
-  await newListing.save();
-  res.redirect("/listings");
-}));
-
-app.get("/listings/:id/edit", wrapAsync(async (req, res) => {
-  const { id } = req.params;
-  const listing = await Listing.findById(id);
-  res.render("listings/edit", { listing });
-}));
-
-app.put("/listings/:id", wrapAsync(async (req, res) => {
-  const { id } = req.params;
-  await Listing.findByIdAndUpdate(id, { ...req.body.listing });
-  res.redirect(`/listings/${id}`);
-}));
-
-app.delete("/listings/:id", wrapAsync(async (req, res) => {
-  const { id } = req.params;
-  const deletedListing = await Listing.findByIdAndDelete(id);
-  res.redirect("/listings");
-}));
-
-// Reviews
-//post route
-app.post("/listings/:id/reviews", async (req, res) => {
-  console.log(req.body); // Debugging the received request body
-  const { id } = req.params;
-  const listing = await Listing.findById(id);
-  const newReview = new Review(req.body.review);
-
-  listing.reviews.push(newReview);
-  await newReview.save();
-  await listing.save();
-
-  res.redirect(`/listings/${id}`);
-});
-
-app.delete("/listings/:id/reviews/:reviewId", wrapAsync(async (req, res) => {
-  const { id, reviewId } = req.params; // Ensure parameter names match the route
-
-  // Remove the review reference from the listing
-  await Listing.findByIdAndUpdate(id, { $pull: { reviews: reviewId } });
-
-  // Delete the review document from the database
-  await Review.findByIdAndDelete(reviewId);
-
-  // Redirect back to the listing's page
-  res.redirect(`/listings/${id}`);
-}));
+app.use("/listings" , listings);
+app.use("/listings/:id/reviews",reviews)
 
 app.get("/seed", wrapAsync(async (req, res) => {
   try {
