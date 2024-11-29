@@ -28,30 +28,43 @@ router.get("/new", (req, res) => {
 router.get("/:id", wrapAsync(async (req, res) => {
     const { id } = req.params;
     const listing = await Listing.findById(id).populate("reviews");
+    if(!listing){
+      req.flash("error","listing is not exited");
+      res.redirect("/listings")
+    }
     res.render("listings/show", { listing });
 }));
-  
+  // add listing
   router.post("/", validateListings, wrapAsync(async (req, res) => {
     const newListing = new Listing(req.body.listing);
     await newListing.save();
+    req.flash("success","new listing added");
     res.redirect("/listings");
   }));
   
+  // update listing
   router.get("/:id/edit", wrapAsync(async (req, res) => {
     const { id } = req.params;
     const listing = await Listing.findById(id);
+    if(!listing){
+      req.flash("error","listing is not exited");
+      res.redirect("/listings")
+    }
     res.render("listings/edit", { listing });
   }));
   
   router.put("/:id", wrapAsync(async (req, res) => {
     const { id } = req.params;
     await Listing.findByIdAndUpdate(id, { ...req.body.listing });
+    req.flash("success","listing updated");
     res.redirect(`/listings/${id}`);
   }));
   
+  // delete
   router.delete("/:id", wrapAsync(async (req, res) => {
     const { id } = req.params;
     const deletedListing = await Listing.findByIdAndDelete(id);
+    req.flash("success","listing removed");
     res.redirect("/listings");
   }));
 
