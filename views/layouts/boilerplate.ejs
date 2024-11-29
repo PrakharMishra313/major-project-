@@ -29,7 +29,7 @@
 
     <!-- Main Container -->
     <div class="container">
-      <%- include("../includes/flash.ejs") %>
+      <%- include("../includes/flash.ejs", { error: locals.error }) %>
         <%- body %> <!-- Dynamic content for EJS templates -->
     </div>
 
