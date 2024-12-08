@@ -70,10 +70,10 @@ app.use((req,res,next)=>{
   next();
 });
 
-// // Test root route
-// app.get("/", (req, res) => {
-//   res.send("Hi, I am root");
-// });
+// Test root route
+ app.get("/", (req, res) => {
+  res.send("Hi, I am root");
+});
 
 const validateReview = (req, res, next) => {
   const { error } = reviewSchema.validate(req.body);
