@@ -1,23 +1,28 @@
-const Listing = require("../models/listing");
-const Review = require("../models/review");
+const express = require('express');
+const router = express.Router();
+const Listing = require('../models/listing');
+const Review = require('../models/review');
 
-module.exports.createReview = async (req, res) => {
-    const { id } = req.params;
-    const listing = await Listing.findById(id);
-    const newReview = new Review(req.body.review);
+// Add a review to a listing
+router.post('/listings/:id/reviews', async (req, res) => {
+  try {
+    const listing = await Listing.findById(req.params.id);
+    const { rating, comment } = req.body.review;
 
-    listing.reviews.push(newReview);
-    await newReview.save();
+    const review = new Review({
+      rating,
+      comment,
+      author: req.user._id,  // Assuming req.user is populated with the logged-in user
+    });
+
+    await review.save();
+
+    listing.reviews.push(review._id);  // Add the review's ID to the listing's reviews array
     await listing.save();
-    req.flash("success", "Review added!");
-    res.redirect(`/listings/${id}`);
-};
 
-module.exports.destroyReview = async (req, res) => {
-    const { id, reviewId } = req.params;
-    await Listing.findByIdAndUpdate(id, { $pull: { reviews: reviewId } });
-    await Review.findByIdAndDelete(reviewId);
-
-    req.flash("success", "Review deleted!");
-    res.redirect(`/listings/${id}`);
-};
+    res.redirect(`/listings/${listing._id}`);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error adding review');
+  }
+});
