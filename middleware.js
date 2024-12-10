@@ -1,6 +1,6 @@
 const { response } = require("express");
 const Listing = require("./models/listing");
-const { listingSchema} = require("./schema.js");
+const { listingSchema, reviewSchema} = require("./schema.js");
 const expressError = require("./utils/expressError.js");
 
 module.exports.isLoggedin = (req,res,next)=>{
@@ -42,3 +42,18 @@ module.exports.validateListings = (req, res, next) => {
       next();
     }
   };
+
+  
+//review validation
+module.exports.validReview = (req, res, next) => {
+    let { error } = reviewSchema.validate(req.body);
+
+    if (error) {
+        console.log(error)
+        let errMsg = error.details.map((el) => el.message).join(",")
+        throw new expressError(400, errMsg);
+    }
+    else {
+        next();
+    }
+}
