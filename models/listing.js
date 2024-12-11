@@ -25,8 +25,8 @@ const listingSchema = new Schema({
     required: true, // Adjust this based on your needs
   },
   image: {
-    type: String, // Adjust based on whether you want to store it as a URL or an object
-    required: false, // Set to true if you want this field to be required
+    URL: String, // Adjust based on whether you want to store it as a URL or an object
+    File: String
   },
   reviews: [
     {
